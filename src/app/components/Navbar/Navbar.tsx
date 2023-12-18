@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { useData } from '../../contexts/data';
-import Logo from "/public/logo.png"
+import Logo from "../../assets/Logo.png"
 
 function Navbar({menuOpened, onLinkClick} :NavbarProps ){
     const data = useData();

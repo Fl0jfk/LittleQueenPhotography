@@ -6,7 +6,7 @@ import { useData } from '../../contexts/data';
 import CrossButton from '../Buttons/CrossButton';
 import Navbar from '../Navbar/Navbar';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';	
-import Logo from "/public/logo.png"
+import Logo from "../../assets/Logo.png"
 
 export default function Header(){
     const data = useData();
