@@ -28,7 +28,7 @@ export default function InstaFeed() {
 
                 const fetchedItems: InstaItem[] = [];
 
-                for (let i = 0; i < jsonData.data.length && i < 9; i++) {
+                for (let i = 0; i < jsonData.data.length && i < 15; i++) {
                     const item = jsonData.data[i];
                     const itemId = item.id;
                     const mediaUrl = await fetchMediaUrl(itemId);
