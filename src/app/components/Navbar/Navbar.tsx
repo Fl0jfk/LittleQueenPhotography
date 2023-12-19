@@ -54,17 +54,17 @@ function Navbar({menuOpened, onLinkClick} :NavbarProps ){
                             <Link className='hover:scale-110 text-white' href="/about" onClick={handleLinkClick} aria-label="Lien vers la page à propos">À propos</Link>
                             <Link className='hover:scale-110 text-white' href="/contact" onClick={handleLinkClick} aria-label="Lien vers la page contact">Contact</Link>
                         </div>
-                        <div  className={`flex flex-col gap-5 justify-center items-center w-full ${servicesVisible}`}>
-                            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" className='cursor-pointer' onClick={()=>setServicesAppear(false)}>
-                                <path d="M11 6L5 12M5 12L11 18M5 12H19" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        <div  className={`flex flex-col gap-7 justify-center items-center w-full ${servicesVisible}`}>
+                            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" className='cursor-pointer absolute top-4 left-4' onClick={()=>setServicesAppear(false)}>
+                                <path d="M11 6L5 12M5 12L11 18M5 12H19" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
-                            <Link className='hover:scale-105 text-center text-white text-lg' href="/services/portrait-intimiste" onClick={handleLinkClick} aria-label="Lien vers la page portrait intimiste">Boudoir intimiste</Link>
-                            <Link className='hover:scale-105 text-center text-white text-lg' href="/services/portrait-emotionnel" onClick={handleLinkClick} aria-label="Lien vers la page portrait émotionnel">Boudoir & texture</Link>
-                            <Link className='hover:scale-105 text-center text-white text-lg' href="/services/portrait-evenementiel" onClick={handleLinkClick} aria-label="Lien vers la page portrait événementiel">Artistique</Link>
-                            <Link className='hover:scale-105 text-center text-white text-lg' href="/services/portrait-intimiste" onClick={handleLinkClick} aria-label="Lien vers la page portrait intimiste">Portrait</Link>
-                            <Link className='hover:scale-105 text-center text-white text-lg' href="/services/portrait-emotionnel" onClick={handleLinkClick} aria-label="Lien vers la page portrait émotionnel">Extérieur</Link>
-                            <Link className='hover:scale-105 text-center text-white text-lg' href="/services/portrait-evenementiel" onClick={handleLinkClick} aria-label="Lien vers la page portrait événementiel">Grossesse & bébé</Link>
-                            <Link className='hover:scale-105 text-center text-white text-lg' href="/services/portrait-emotionnel" onClick={handleLinkClick} aria-label="Lien vers la page portrait émotionnel">Moments de vie</Link>                           
+                            <Link className='hover:scale-105 text-center text-white text-xl' href="/services/portrait-intimiste" onClick={handleLinkClick} aria-label="Lien vers la page portrait intimiste">Boudoir intimiste</Link>
+                            <Link className='hover:scale-105 text-center text-white text-xl' href="/services/portrait-emotionnel" onClick={handleLinkClick} aria-label="Lien vers la page portrait émotionnel">Boudoir & texture</Link>
+                            <Link className='hover:scale-105 text-center text-white text-xl' href="/services/portrait-evenementiel" onClick={handleLinkClick} aria-label="Lien vers la page portrait événementiel">Artistique</Link>
+                            <Link className='hover:scale-105 text-center text-white text-xl' href="/services/portrait-intimiste" onClick={handleLinkClick} aria-label="Lien vers la page portrait intimiste">Portrait</Link>
+                            <Link className='hover:scale-105 text-center text-white text-xl' href="/services/portrait-emotionnel" onClick={handleLinkClick} aria-label="Lien vers la page portrait émotionnel">Extérieur</Link>
+                            <Link className='hover:scale-105 text-center text-white text-xl' href="/services/portrait-evenementiel" onClick={handleLinkClick} aria-label="Lien vers la page portrait événementiel">Grossesse & bébé</Link>
+                            <Link className='hover:scale-105 text-center text-white text-xl' href="/services/portrait-emotionnel" onClick={handleLinkClick} aria-label="Lien vers la page portrait émotionnel">Moments de vie</Link>                           
                         </div>
                         <div className='flex gap-4'>
                         <Link href="/" className="hover:scale-[1.1]" onClick={handleLinkClick} target="blank">
