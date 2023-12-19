@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@viewport {
+    orientation: portrait;
+}
+
 a {
     cursor: pointer;
 }

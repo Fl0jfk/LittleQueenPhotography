@@ -41,8 +41,8 @@ export default function Slider() {
     setPage([page + newDirection, newDirection]);
   };
   return (
-    <section className="w-screen h-[40vh] md:h-[35vh] sm:h-[35vh] flex justify-center items-center z-[0]">
-      <div className="w-screen h-[40vh] md:h-[35vh] sm:h-[35vh] relative flex items-center justify-center z-[0]">
+    <section className="w-screen h-[45vh] md:h-[35vh] sm:h-[35vh] flex justify-center items-center z-[0]">
+      <div className="w-screen h-[45vh] md:h-[35vh] sm:h-[35vh] relative flex items-center justify-center z-[0]">
         <AnimatePresence initial={false} custom={direction}>
           <motion.img key={page} custom={direction} variants={variants} initial="enter" animate="center" exit="exit"
             src={images[imageIndex]} 
