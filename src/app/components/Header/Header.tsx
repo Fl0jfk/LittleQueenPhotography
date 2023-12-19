@@ -13,7 +13,7 @@ export default function Header(){
     const { scrollY } = useScroll();
     const [menuOpened, setMenuOpened] = useState(false);
     const [hidden, setHidden ] = useState(false);
-    const opacityMenu = (!menuOpened? "sm:opacity-80 md:opacity-80 h-[10vh]" : "h-[100vh] ease-linear duration-300")
+    const opacityMenu = (!menuOpened? "sm:opacity-80 md:opacity-80 h-[10vh] ease-linear duration-300" : "h-[100vh] ease-linear duration-300")
     const handleClick = () => {
         setMenuOpened(!menuOpened);
     };
