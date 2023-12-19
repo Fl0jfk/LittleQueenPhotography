@@ -14,8 +14,8 @@ export default function Home() {
       </Head>
       <DataProvider>
         <Header/>
-        <main className="w-full h-full flex flex-col sm:pt-[10vh]">
-          <section className='w-full h-full flex flex-col gap-1'>
+        <main className="w-full h-full flex flex-col sm:pt-[10vh] z-[0]">
+          <section className='w-full h-full flex flex-col gap-1 z-[0]'>
             <Slider/>
             <Slider/>
             <Slider/>

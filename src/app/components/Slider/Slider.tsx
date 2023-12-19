@@ -41,12 +41,12 @@ export default function Slider() {
     setPage([page + newDirection, newDirection]);
   };
   return (
-    <section className="w-screen h-[40vh] md:h-[35vh] sm:h-[35vh] flex justify-center items-center overflow-hidden">
-      <div className="w-screen h-[40vh] md:h-[35vh] sm:h-[35vh] relative flex items-center justify-center">
+    <section className="w-screen h-[40vh] md:h-[35vh] sm:h-[35vh] flex justify-center items-center z-[0]">
+      <div className="w-screen h-[40vh] md:h-[35vh] sm:h-[35vh] relative flex items-center justify-center z-[0]">
         <AnimatePresence initial={false} custom={direction}>
           <motion.img key={page} custom={direction} variants={variants} initial="enter" animate="center" exit="exit"
             src={images[imageIndex]} 
-            className="absolute max-w-screen h-full w-full object-cover"
+            className="absolute max-w-screen h-full w-full object-cover z-[0]"
             transition={{ x: { type: "spring", stiffness: 300, damping: 30 }, opacity: { duration: 0.2 }}}
             drag="x"
             dragConstraints={{ left: 0, right: 0 }}
@@ -58,11 +58,11 @@ export default function Slider() {
             }}
           />
         </AnimatePresence>
-        <button className="select-none absolute bg-white rounded-full opacity-70 w-[40px] h-[40px] flex justify-center items-center cursor-pointer text-4xl z-10 right-4 top-[calc(50%-20px)] md:hidden sm:hidden" onClick={() => paginate(1)}>
+        <button className="select-none absolute bg-white rounded-full opacity-70 w-[40px] h-[40px] flex justify-center items-center cursor-pointer text-4xl z-[1] right-4 top-[calc(50%-20px)] md:hidden sm:hidden" onClick={() => paginate(1)}>
           {"‣"}
         </button>
-        <h2  className="absolute text-white top-[calc(50%-20px)] text-4xl sm:text-3xl opacity-50 z-10 uppercase">Portrait intimiste</h2>
-        <button className="scale-[-1] select-none absolute bg-white rounded-full opacity-70 w-[40px] h-[40px] flex justify-center items-center cursor-pointer text-4xl z-10 left-4 top-[calc(50%-20px)] md:hidden sm:hidden" onClick={() => paginate(-1)}>
+        <h2  className="absolute text-white top-[calc(50%-20px)] text-4xl sm:text-3xl opacity-50 z-[1] uppercase">Portrait intimiste</h2>
+        <button className="scale-[-1] select-none absolute bg-white rounded-full opacity-70 w-[40px] h-[40px] flex justify-center items-center cursor-pointer text-4xl z-[1] left-4 top-[calc(50%-20px)] md:hidden sm:hidden" onClick={() => paginate(-1)}>
           {"‣"}
         </button>
       </div>
