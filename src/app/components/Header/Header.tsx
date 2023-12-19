@@ -13,7 +13,8 @@ export default function Header(){
     const { scrollY } = useScroll();
     const [menuOpened, setMenuOpened] = useState(false);
     const [hidden, setHidden ] = useState(false);
-    const opacityMenu = (!menuOpened? "sm:opacity-80 md:opacity-80 h-[10vh] ease-linear duration-300" : "h-[100vh] ease-linear duration-300")
+    const opacityMenu = (!menuOpened? "sm:opacity-80 md:opacity-80 h-[10vh] ease-linear duration-300" : "h-[100vh] ease-linear duration-300");
+    const opacityLogo = (!menuOpened? "ease-linear delay-100 duration-200 scale-1" : "ease-linear delay-150 duration-300 scale-0");
     const handleClick = () => {
         setMenuOpened(!menuOpened);
     };
@@ -36,7 +37,7 @@ export default function Header(){
             className={`flex p-4 justify-between items-center w-full fixed z-[12] md:mb-[100px] bg-[#000]  ${opacityMenu} max-w-[1440px] self-center uppercase overflow-hidden`}>
                 <div className='w-2/12 flex items-center h-full sm:w-4/12 md:w-4/12'>
                     {Logo && 
-                        <Image src={Logo} alt='Mon memoji' width={150} height={150} className='cursor-pointer z-[8]' onClick={()=>{window.scrollTo({top:0, left:0, behavior:'smooth'})}}/>
+                        <Image src={Logo} alt='Mon memoji' width={150} height={150} className={`cursor-pointer z-[8] ${opacityLogo}`} onClick={()=>{window.scrollTo({top:0, left:0, behavior:'smooth'})}}/>
                     }
                 </div>
                 <div className='w-10/12 flex justify-end items-center sm:mt-[-5px] h-full'>
