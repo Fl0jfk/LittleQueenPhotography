@@ -15,7 +15,16 @@ export default function Home() {
       <DataProvider>
         <Header/>
         <main className="w-full h-full flex flex-col sm:pt-[10vh]">
-          <Slider/>
+          <section className='w-full h-full flex flex-col gap-2'>
+            <Slider/>
+            <Slider/>
+            <Slider/>
+            <Slider/>
+            <Slider/>
+            <Slider/>
+            <Slider/>
+            <Slider/>
+          </section>
           <InstaFeed/>
         </main>
       </DataProvider>

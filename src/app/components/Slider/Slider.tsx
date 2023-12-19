@@ -11,7 +11,7 @@ export const images = [
 const variants = {
   enter: (direction: number) => {
     return {
-      x: direction > 0 ? 1000 : -1000,
+      x: direction > 0 ? 500 : -500,
       opacity: 0
     };
   },
@@ -23,7 +23,7 @@ const variants = {
   exit: (direction: number) => {
     return {
       zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
+      x: direction < 0 ? 500 : -500,
       opacity: 0
     };
   }
@@ -41,12 +41,12 @@ export default function Slider() {
     setPage([page + newDirection, newDirection]);
   };
   return (
-    <section className="w-screen h-[50vh] md:h-[40vh] sm:h-[40vh] flex justify-center items-center overflow-hidden">
-      <div className="w-screen h-[50vh] md:h-[40vh] sm:h-[40vh] relative flex items-center justify-center">
+    <section className="w-screen h-[40vh] md:h-[35vh] sm:h-[35vh] flex justify-center items-center overflow-hidden">
+      <div className="w-screen h-[40vh] md:h-[35vh] sm:h-[35vh] relative flex items-center justify-center">
         <AnimatePresence initial={false} custom={direction}>
           <motion.img key={page} custom={direction} variants={variants} initial="enter" animate="center" exit="exit"
             src={images[imageIndex]} 
-            className="absolute max-w-screen h-full w-full"
+            className="absolute max-w-screen h-full w-full object-cover"
             transition={{ x: { type: "spring", stiffness: 300, damping: 30 }, opacity: { duration: 0.2 }}}
             drag="x"
             dragConstraints={{ left: 0, right: 0 }}
@@ -61,6 +61,7 @@ export default function Slider() {
         <button className="select-none absolute bg-white rounded-full opacity-70 w-[40px] h-[40px] flex justify-center items-center cursor-pointer text-4xl z-10 right-4 top-[calc(50%-20px)] md:hidden sm:hidden" onClick={() => paginate(1)}>
           {"‣"}
         </button>
+        <h2  className="absolute text-white top-[calc(50%-20px)] text-4xl sm:text-3xl opacity-50 z-10 uppercase">Portrait intimiste</h2>
         <button className="scale-[-1] select-none absolute bg-white rounded-full opacity-70 w-[40px] h-[40px] flex justify-center items-center cursor-pointer text-4xl z-10 left-4 top-[calc(50%-20px)] md:hidden sm:hidden" onClick={() => paginate(-1)}>
           {"‣"}
         </button>
