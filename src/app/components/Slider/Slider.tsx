@@ -58,11 +58,11 @@ export default function Slider() {
             }}
           />
         </AnimatePresence>
-        <button className="select-none absolute bg-white rounded-full opacity-70 w-[40px] h-[40px] flex justify-center items-center cursor-pointer text-4xl z-[1] right-4 top-[calc(50%-20px)] md:hidden sm:hidden" onClick={() => paginate(1)}>
+        <button className="select-none pt-1 absolute bg-white rounded-full opacity-70 w-[40px] h-[40px] flex justify-center items-center text-3xl z-[1] right-4 top-[calc(50%-20px)] md:hidden sm:hidden" onClick={() => paginate(1)}>
           {"‣"}
         </button>
         <h2  className="absolute text-white top-[calc(50%-20px)] text-4xl sm:text-3xl opacity-50 z-[1] uppercase">Portrait intimiste</h2>
-        <button className="scale-[-1] select-none absolute bg-white rounded-full opacity-70 w-[40px] h-[40px] flex justify-center items-center cursor-pointer text-4xl z-[1] left-4 top-[calc(50%-20px)] md:hidden sm:hidden" onClick={() => paginate(-1)}>
+        <button className="scale-[-1] pt-1 select-none absolute bg-white rounded-full opacity-70 w-[40px] h-[40px] flex justify-center items-center text-3xl z-[1] left-4 top-[calc(50%-20px)] md:hidden sm:hidden" onClick={() => paginate(-1)}>
           {"‣"}
         </button>
       </div>

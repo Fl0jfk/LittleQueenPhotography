@@ -3,7 +3,7 @@
 import Head from 'next/head';
 import { DataProvider } from './contexts/data';
 import Header from './components/Header/Header';
-import InstaFeed from "./components/InstagramFeed/InstaFeed";
+import Footer from './components/Footer/Footer';
 import Slider from './components/Slider/Slider';
 
 export default function Home() {
@@ -25,8 +25,8 @@ export default function Home() {
             <Slider/>
             <Slider/>
           </section>
-          <InstaFeed/>
         </main>
+        <Footer/>
       </DataProvider>
     </>
     
