@@ -13,12 +13,12 @@ export default function MentionsLégales (){
                 <Header/>
                 <main className="w-full h-full flex flex-col pt-[10vh] z-[0] text-white">
                     <section className="text-white h-[40vh] w-full flex flex-col items-center justify-center gap-4 bg-cover" style={{backgroundImage: `url('${FondFleurRose.src}')`}}>
-                       <p className="text-white text-4xl text-center">Je pense sincèrement,</p>
-                       <p className="text-white text-xl text-center">que la vie est faite de moments de JOIE et d&apos;amour qu&apos;il faut savourer et chérir.</p>
+                       <p className="text-white text-6xl sm:text-3xl text-center">Je pense <span className="uppercase">sincèrement</span>,</p>
+                       <p className="text-white text-2xl text-center sm:text-xl">que la vie est faite de moments de <span className="uppercase">joie</span> et d&apos;<span className="uppercase">amour</span> qu&apos;il faut savourer et chérir.</p>
                     </section>
-                    <section className="flex flex-col gap-3 p-8 h-full w-full text-lg">
+                    <section className="flex flex-col gap-3 p-16 h-full w-full text-lg sm:p-8">
                         <h1 className="text-6xl self-center uppercase">Mentions légales</h1>
-                        <h2 className="text-4xl uppercase">Crédit photo</h2>
+                        <h2 className="text-4xl uppercase mt-4">Crédit photo</h2>
                         <p>Toutes les photographies sont propriétés de LittleQueenPhotography</p>
                         <h2 className="text-4xl uppercase">Réalisation du site</h2>
                         <p>Site réalisé par Fl0jfk</p>

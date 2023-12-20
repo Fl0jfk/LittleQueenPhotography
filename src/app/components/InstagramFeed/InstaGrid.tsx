@@ -24,8 +24,7 @@ export default function InstaGrid({ items }: InstaGridProps) {
         <div className="flex w-full gap-4 mx-auto">
             {items.map((item) => (
                 <Link key={item.mediaUrl} href={`${item.mediaUrl}`} aria-label="Lien vers la photo instagram cliquée">
-                    <div className="h-[150px] w-[150px]">
-                        <Image src={item.mediaUrl} width={150} height={150} sizes="20vw" alt="Une des dernières photos de notre flux instagram" className="object-cover"/>
+                    <div className="h-[200px] w-[200px] bg-cover" style={{backgroundImage: `url('${item.mediaUrl}')`}}>
                     </div>
                 </Link>
             ))}

@@ -34,7 +34,7 @@ export default function Header(){
             variants={{ visible: { y: 0 }, hidden: { y: "-100%" }}} 
             animate={hidden ? "hidden" : "visible"}
             transition={{duration: 0.35, ease: "easeInOut"}}
-            className={`flex p-4 justify-between items-center w-full fixed z-[12] md:mb-[100px] bg-[#000]  ${opacityMenu} max-w-[1440px] self-center uppercase overflow-hidden`}>
+            className={`flex p-4 justify-between items-center w-full fixed z-[12] md:mb-[100px] bg-[#000]  ${opacityMenu} self-center uppercase overflow-hidden`}>
                 <div className='w-2/12 flex items-center h-full sm:w-4/12 md:w-4/12'>
                     {Logo && 
                         <Image src={Logo} alt='Mon memoji' width={150} height={150} className={`cursor-pointer z-[8] ${opacityLogo}`} onClick={()=>{window.scrollTo({top:0, left:0, behavior:'smooth'})}}/>
