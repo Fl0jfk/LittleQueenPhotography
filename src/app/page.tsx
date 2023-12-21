@@ -5,6 +5,7 @@ import { DataProvider } from './contexts/data';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Slider from './components/Slider/Slider';
+import InfinitePhotos from './components/InfinitePhotos/InfinitePhotos';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <DataProvider>
         <Header/>
         <main className="w-full h-full flex flex-col sm:pt-[10vh] z-[0]">
+          <InfinitePhotos/>
           <section className='w-full h-full flex flex-col gap-1 z-[0]'>
             <Slider/>
             <Slider/>

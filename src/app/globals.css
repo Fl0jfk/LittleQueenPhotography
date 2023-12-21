@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@viewport {
-    orientation: portrait;
+* {
+    box-sizing: border-box;
 }
 
 a {

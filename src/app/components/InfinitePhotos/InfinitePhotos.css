@@ -1,0 +1,17 @@
+@keyframes Scroll {
+    0% {
+      transform: translateY(-100%);
+    }
+  }
+  .scroll {
+    animation: Scroll 25s linear infinite;
+  }
+  .scroll2 {
+    animation: Scroll 15s linear infinite;
+  }
+  .scroll3 {
+    animation: Scroll 20s linear infinite;
+  }
+  .scroll4 {
+    animation: Scroll 18s linear infinite;
+  }
