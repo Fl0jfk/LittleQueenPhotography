@@ -1,17 +1,13 @@
-'use client'
-
 import Link from 'next/link';
 import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { useData } from '../../contexts/data';
 import Logo from "../../assets/Logo.png"
 
 function Navbar({menuOpened, onLinkClick} :NavbarProps ){
-    const data = useData();
     const [clickOnLink, setClickOnLink] = useState(menuOpened);
     const menuOpen = (clickOnLink ? "" : "hidden");
-    const bgMenuOpen = (clickOnLink ? "#6f3d47" : ""  );
+    const bgMenuOpen = (clickOnLink ? "#000" : ""  );
     const [servicesAppear, setServicesAppear] = useState(false);
     const servicesVisible = (servicesAppear ? "" : "hidden");
     const restOfMenu = (!servicesAppear ? "" : "hidden")
@@ -35,7 +31,7 @@ function Navbar({menuOpened, onLinkClick} :NavbarProps ){
                 {menuOpened && 
                     <motion.nav 
                             style={{background:`${bgMenuOpen}`, opacity:0.9}} 
-                            className={`md:${menuOpen} sm:${menuOpen} gap-10 text-2xl flex flex-col top-0 left-0 fixed pt-10 items-center top-0 left-0 w-full h-[100vh] z-[9] xl:hidden lg:hidden`}
+                            className={`md:${menuOpen} sm:${menuOpen} gap-10 text-2xl flex flex-col top-0 left-0 fixed pt-10 items-center opacity-80 top-0 left-0 w-full h-[100vh] z-[9] xl:hidden lg:hidden`}
                             initial={{translateX:"100%"}}
                             animate={{translateX:"0%", transition:{duration: 0.5, ease: "easeInOut"}}}
                             exit={{translateX:"100%", transition:{duration: 0.5, ease: "easeInOut"}}}
