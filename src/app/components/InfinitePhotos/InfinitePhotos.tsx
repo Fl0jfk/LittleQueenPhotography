@@ -34,7 +34,7 @@ export default function InfinitePhotos (){
                 <span className="scroll2">
                     {images.map((image) => (
                         <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
+                            <Image src={image} sizes="30vw sm:80vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
                         </Link>
                     ))}
                 </span>
