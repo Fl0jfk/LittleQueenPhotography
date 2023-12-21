@@ -13,19 +13,19 @@ export const images = [
 
 export default function InfinitePhotos (){
     return (
-        <section className="flex gap-2 px-3 h-[100vh] w-full">
+        <section className="flex gap-3 px-3 h-[100vh] w-full">
             <div className="flex h-full w-full flex-col items-center">
                 <span className="scroll">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mt-2 mb-2 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={300} width={300} className="mt-2 mb-2 rounded-lg"/>
+                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
+                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
                         </Link>
                     ))}
                 </span>
                 <span className="scroll">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mt-2 mb-2 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={300} width={300} className="mt-2 mb-2 rounded-lg"/>
+                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
+                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
                         </Link>
                     ))}
                 </span>
@@ -33,15 +33,15 @@ export default function InfinitePhotos (){
             <div className="flex h-full w-full flex-col items-center sm:hidden">
                 <span className="scroll2">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mt-2 mb-2 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={300} width={300} className="mt-2 mb-2 rounded-lg"/>
+                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
+                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
                         </Link>
                     ))}
                 </span>
                 <span className="scroll2">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mt-2 mb-2 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={300} width={300} className="mt-2 mb-2 rounded-lg"/>
+                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
+                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
                         </Link>
                     ))}
                 </span>
@@ -49,15 +49,15 @@ export default function InfinitePhotos (){
             <div className="flex h-full w-full flex-col items-center sm:hidden">
                 <span className="scroll3">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mt-2 mb-2 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={300} width={300} className="mt-2 mb-2 rounded-lg"/>
+                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
+                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
                         </Link>
                     ))}
                 </span>
                 <span className="scroll3">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mt-2 mb-2 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={300} width={300} className="mt-2 mb-2 rounded-lg"/>
+                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
+                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
                         </Link>
                     ))}
                 </span>
@@ -65,15 +65,15 @@ export default function InfinitePhotos (){
             <div className="flex h-full w-full flex-col items-center sm:hidden">
                 <span className="scroll4">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mt-2 mb-2 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={300} width={300} className="mt-2 mb-2 rounded-lg"/>
+                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
+                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
                         </Link>
                     ))}
                 </span>
                 <span className="scroll4">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mt-2 mb-2 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={300} width={300} className="mt-2 mb-2 rounded-lg"/>
+                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
+                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
                         </Link>
                     ))}
                 </span>
