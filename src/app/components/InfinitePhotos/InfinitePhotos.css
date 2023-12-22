@@ -3,6 +3,10 @@
       transform: translateY(-100%);
     }
   }
+
+  .stopanim:hover > span {
+    animation-play-state: paused;
+  }
   
   .scroll {
     animation: Scroll 25s linear infinite;
@@ -15,4 +19,13 @@
   }
   .scroll4 {
     animation: Scroll 15s linear infinite;
+  }
+
+  .details:hover > img {
+    -webkit-filter: grayscale(100%) blur(2px);
+    filter: grayscale(100%) blur(2px);
+  }
+
+  .details:hover > span {
+    display: block;
   }

@@ -14,95 +14,83 @@ export const images = [
 export default function InfinitePhotos (){
     return (
         <section className="flex gap-3 px-3 h-[100vh] w-full overflow-hidden">
-            <div className="flex h-full w-full flex-col items-center">
+            <div className="flex h-full w-full flex-col items-center stopanim">
                 <span className="scroll">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
-                        </Link>
-                    ))}
-                </span>
-                <span className="scroll">
-                    {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
+                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg details relative">
+                            <span className="text-white text-4xl inline absolute z-10 top-1 sm:top-4 left-1 hidden">Mon projet</span>
+                            <span className="text-white text-4xl inline absolute z-10 left-[160px] sm:left-[250px] sm:top-4 top-1 hidden">Mon projet</span>
+                            <Image src={image} sizes="(max-width: 768px) 90vw, 25vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg z-0"/> 
                         </Link>
                     ))}
                 </span>
                 <span className="scroll">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
-                        </Link>
+                         <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg details relative">
+                         <span className="text-white text-4xl inline absolute z-10 top-1 sm:top-4 left-1 hidden">Mon projet</span>
+                         <span className="text-white text-4xl inline absolute z-10 left-[160px] sm:left-[250px] sm:top-4 top-1 hidden">Mon projet</span>
+                         <Image src={image} sizes="(max-width: 768px) 90vw, 25vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg z-0"/> 
+                     </Link>
                     ))}
                 </span>
             </div>
-            <div className="flex h-full w-full flex-col items-center sm:hidden">
-                <span className="scroll2">
+            <div className="flex h-full w-full flex-col items-center sm:hidden stopanim">
+            <span className="scroll2">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
-                        </Link>
-                    ))}
-                </span>
-                <span className="scroll2">
-                    {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
+                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg details relative">
+                            <span className="text-white text-4xl inline absolute z-10 top-1 sm:top-4 left-1 hidden">Mon projet</span>
+                            <span className="text-white text-4xl inline absolute z-10 left-[160px] sm:left-[250px] sm:top-4 top-1 hidden">Mon projet</span>
+                            <Image src={image} sizes="(max-width: 768px) 90vw, 25vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg z-0"/> 
                         </Link>
                     ))}
                 </span>
                 <span className="scroll2">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
-                        </Link>
+                         <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg details relative">
+                         <span className="text-white text-4xl inline absolute z-10 top-1 sm:top-4 left-1 hidden">Mon projet</span>
+                         <span className="text-white text-4xl inline absolute z-10 left-[160px] sm:left-[250px] sm:top-4 top-1 hidden">Mon projet</span>
+                         <Image src={image} sizes="(max-width: 768px) 90vw, 25vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg z-0"/> 
+                     </Link>
                     ))}
                 </span>
             </div>
-            <div className="flex h-full w-full flex-col items-center sm:hidden">
-                <span className="scroll3">
+            <div className="flex h-full w-full flex-col items-center sm:hidden stopanim">
+            <span className="scroll3">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
+                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg details relative">
+                            <span className="text-white text-4xl inline absolute z-10 top-1 sm:top-4 left-1 hidden">Mon projet</span>
+                            <span className="text-white text-4xl inline absolute z-10 left-[160px] sm:left-[250px] sm:top-4 top-1 hidden">Mon projet</span>
+                            <Image src={image} sizes="(max-width: 768px) 90vw, 25vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg z-0"/> 
                         </Link>
                     ))}
                 </span>
                 <span className="scroll3">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
-                        </Link>
-                    ))}
-                </span>
-                <span className="scroll3">
-                    {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
-                        </Link>
+                         <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg details relative">
+                         <span className="text-white text-4xl inline absolute z-10 top-1 sm:top-4 left-1 hidden">Mon projet</span>
+                         <span className="text-white text-4xl inline absolute z-10 left-[160px] sm:left-[250px] sm:top-4 top-1 hidden">Mon projet</span>
+                         <Image src={image} sizes="(max-width: 768px) 90vw, 25vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg z-0"/> 
+                     </Link>
                     ))}
                 </span>
             </div>
-            <div className="flex h-full w-full flex-col items-center sm:hidden">
-                <span className="scroll4">
+            <div className="flex h-full w-full flex-col items-center sm:hidden stopanim">
+            <span className="scroll4">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
+                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg details relative">
+                            <span className="text-white text-4xl inline absolute z-10 top-1 sm:top-4 left-1 hidden">Mon projet</span>
+                            <span className="text-white text-4xl inline absolute z-10 left-[160px] sm:left-[250px] sm:top-4 top-1 hidden">Mon projet</span>
+                            <Image src={image} sizes="(max-width: 768px) 90vw, 25vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg z-0"/> 
                         </Link>
                     ))}
                 </span>
                 <span className="scroll4">
                     {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
-                        </Link>
-                    ))}
-                </span>
-                <span className="scroll4">
-                    {images.map((image) => (
-                        <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg">
-                            <Image src={image} sizes="30vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg"/>
-                        </Link>
+                         <Link href={"/"} key={`${image}`} className="mb-3 mt-3 rounded-lg details relative">
+                         <span className="text-white text-4xl inline absolute z-10 top-1 sm:top-4 left-1 hidden">Mon projet</span>
+                         <span className="text-white text-4xl inline absolute z-10 left-[160px] sm:left-[250px] sm:top-4 top-1 hidden">Mon projet</span>
+                         <Image src={image} sizes="(max-width: 768px) 90vw, 25vw" alt="" height={400} width={400} className="mb-3 mt-3 rounded-lg z-0"/> 
+                     </Link>
                     ))}
                 </span>
             </div>
