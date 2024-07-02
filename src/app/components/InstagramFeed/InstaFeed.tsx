@@ -55,7 +55,7 @@ export default function InstaFeed() {
                 {photos.slice(0, 12).map((photo) => (
                     <Link key={photo.id} href={photo.permalink} target="_blank" rel="noopener noreferrer">
                         <div className='w-[200px] h-[200px] rounded-3xl relative'>
-                            <Image src={photo.media_url} alt={photo.caption} sizes={'(min-width: 2em) 24vw,(min-width: 28em) 45vw,100vw'} quality={40} className="object-cover rounded-3xl" fill/>
+                            <Image src={photo.media_url} alt={photo.caption} sizes={'(min-width: 2em) 24vw,(min-width: 28em) 45vw,100vw'} className="object-cover rounded-3xl" fill/>
                         </div>
                     </Link>
                 ))}

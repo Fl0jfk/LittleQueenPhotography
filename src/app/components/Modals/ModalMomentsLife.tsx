@@ -54,7 +54,7 @@ export default function ModalArtistic() {
                             src={imgs.link}
                             width={500}
                             height={500}
-                            quality={40}
+                            quality={50}
                             className="h-full w-full rounded-3xl hover:scale-105 cursor-pointer transition ease-in-out duration-300"
                             style={{ objectFit: "cover" }}
                             onClick={() => openModalPhotos({

@@ -68,14 +68,14 @@ export default function ModalPhotos() {
                         <div className="loader"></div>
                     </div>
                 )}
-                {nameLinkPhotosUp&&<Image src={nameLinkPhotosUp} alt={namePhotosUp} width={700} height={700} quality={60} priority={true} onLoad={() => handleImageLoad()} className="rounded-2xl"/>}
+                {nameLinkPhotosUp&&<Image src={nameLinkPhotosUp} quality={80} alt={namePhotosUp} width={700} height={700} priority={true} onLoad={() => handleImageLoad()} style={{ width: "auto", height: "auto" }} className="rounded-2xl"/>}
             </div>
             </Link>
             <div className="mt-4 flex flex-col w-full gap-4">
                 <div className="flex w-full gap-4 sm:flex-col ">
                     <div className="flex flex-col w-full h-[450px] rounded-2xl justify-center items-center gap-10 relative">
                         <p className="text-white text-3xl">Capturé avec</p>
-                        {cameraLinkPhotosUp&& <Image src={cameraLinkPhotosUp} width={300} height={300} alt="Image de l'appareil photo utilisé pour la photo"/>}
+                        {cameraLinkPhotosUp&& <Image src={cameraLinkPhotosUp} width={300} height={300} style={{ width: "auto", height: "auto" }} alt="Image de l'appareil photo utilisé pour la photo"/>}
                         <span className="h-full w-full absolute bg-black -z-10 opacity-70 rounded-2xl"/>
                     </div>
                     <div className="w-full rounded-2xl h-[450px]">
@@ -90,7 +90,7 @@ export default function ModalPhotos() {
                     </div>
                     <div className="w-full flex flex-col rounded-2xl justify-center items-center relative h-[450px] gap-8">
                         <p className="text-white text-3xl">Edité avec</p>
-                        {softwareLinkPhotosUp&& <Image src={softwareLinkPhotosUp} width={200} height={200} alt="Logo du logiciel utilisé pour le traitement de la photo"/>}
+                        {softwareLinkPhotosUp&& <Image src={softwareLinkPhotosUp} width={200} height={200} alt="Logo du logiciel utilisé pour le traitement de la photo" style={{ width: "auto", height: "auto" }}/>}
                         <span className="h-full w-full absolute bg-black -z-10 opacity-70 rounded-2xl"/>
                     </div>
                 </div>
