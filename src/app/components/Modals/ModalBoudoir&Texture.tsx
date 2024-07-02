@@ -58,7 +58,7 @@ export default function ModalArtistic() {
                                 className="h-full w-full rounded-3xl hover:scale-105 cursor-pointer transition ease-in-out duration-300"
                                 style={{ objectFit: "cover" }}
                                 onClick={() => openModalPhotos({
-                                    namePhotosUp: imgs.name, nameLinkPhotosUp: imgs.link, shortDescriptionPhotosUp: imgs.shortDescription, descriptionPhotosUp: imgs.description, cameraLinkPhotosUp: imgs.cameraLink, longitudePhotosUp: imgs.longitude, softwareLinkPhotosUp: imgs.softwareLink, latitudePhotosUp: imgs.latitude, datePhotosUp: imgs.date, previousModal: "Artistic"
+                                    namePhotosUp: imgs.name, nameLinkPhotosUp: imgs.link, shortDescriptionPhotosUp: imgs.shortDescription, descriptionPhotosUp: imgs.description, cameraLinkPhotosUp: imgs.cameraLink, longitudePhotosUp: imgs.longitude, softwareLinkPhotosUp: imgs.softwareLink, latitudePhotosUp: imgs.latitude, datePhotosUp: imgs.date, previousModal: "BoudoirTexture"
                                 })}
                                 onLoad={() => handleImageLoad()}
                             />

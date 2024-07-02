@@ -1,6 +1,6 @@
 "use client"
 
-import type { Metadata, Viewport } from 'next'
+import type { Viewport } from 'next'
 import SanFrancisco from 'next/font/local';
 import './globals.css';
 import { Provider } from "react-redux";
@@ -22,9 +22,9 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
     <html lang="fr">
       <body className={`${SF.className} w-full h-full bg-black`}>
