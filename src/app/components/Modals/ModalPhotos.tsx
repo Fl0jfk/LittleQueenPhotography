@@ -73,22 +73,22 @@ export default function ModalPhotos() {
             </Link>
             <div className="mt-4 flex flex-col w-full gap-4">
                 <div className="flex w-full gap-4 sm:flex-col ">
-                    <div className="flex flex-col w-full h-[450px] rounded-2xl justify-center items-center gap-10 relative">
+                    <div className="flex flex-col w-full h-[450px] rounded-2xl justify-center items-center gap-10 relative p-8 w-1/2 sm:w-full">
                         <p className="text-white text-3xl">Capturé avec</p>
                         {cameraLinkPhotosUp&& <Image src={cameraLinkPhotosUp} width={300} height={300} style={{ width: "auto", height: "auto" }} alt="Image de l'appareil photo utilisé pour la photo"/>}
                         <span className="h-full w-full absolute bg-black -z-10 opacity-70 rounded-2xl"/>
                     </div>
-                    <div className="w-full rounded-2xl h-[450px]">
+                    <div className="w-1/2 rounded-2xl h-[450px] sm:w-full">
                         <Map latitude={latitudePhotosUp} longitude={longitudePhotosUp}/>
                     </div>
                 </div>
                 <div className="flex w-full gap-4 sm:flex-col">
-                    <div className="flex flex-col w-full rounded-2xl justify-center items-center p-4 gap-4 relative h-[450px]">
+                    <div className="flex flex-col w-full rounded-2xl justify-center items-center p-8 gap-4 relative h-[450px]">
                         <p className="text-white text-3xl">L&apos;histoire</p>
                         <p>{descriptionPhotosUp}</p>
                         <span className="h-full w-full absolute bg-black -z-10 opacity-70 rounded-2xl"/>
                     </div>
-                    <div className="w-full flex flex-col rounded-2xl justify-center items-center relative h-[450px] gap-8">
+                    <div className="w-full flex flex-col rounded-2xl justify-center items-center relative h-[450px] gap-8 p-8">
                         <p className="text-white text-3xl">Edité avec</p>
                         {softwareLinkPhotosUp&& <Image src={softwareLinkPhotosUp} width={200} height={200} alt="Logo du logiciel utilisé pour le traitement de la photo" style={{ width: "auto", height: "auto" }}/>}
                         <span className="h-full w-full absolute bg-black -z-10 opacity-70 rounded-2xl"/>

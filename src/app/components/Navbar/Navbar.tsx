@@ -78,13 +78,13 @@ function Navbar({menuOpened, onLinkClick} :NavbarProps ){
                             <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" className='cursor-pointer absolute top-4 left-4' onClick={()=>setServicesAppear(false)}>
                                 <path d="M11 6L5 12M5 12L11 18M5 12H19" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
-                            <button className='hover:scale-105 text-center text-white' onClick={()=>handleModalOpen('Artistique')} aria-label="Lien vers la page portrait intimiste">Boudoir</button>
-                            <button className='hover:scale-105 text-center text-white' onClick={()=>handleModalOpen('Boudoir')} aria-label="Lien vers la page portrait émotionnel">Boudoir texture</button>
-                            <button className='hover:scale-105 text-center text-white' onClick={()=>handleModalOpen('Boudoir Texture')} aria-label="Lien vers la page portrait événementiel">Artistique</button>
-                            <button className='hover:scale-105 text-center text-white' onClick={()=>handleModalOpen('Moments de vie')} aria-label="Lien vers la page portrait intimiste">Portrait</button>
+                            <button className='hover:scale-105 text-center text-white' onClick={()=>handleModalOpen('Artistique')} aria-label="Lien vers la page portrait intimiste">Artistique</button>
+                            <button className='hover:scale-105 text-center text-white' onClick={()=>handleModalOpen('Boudoir')} aria-label="Lien vers la page portrait émotionnel">Boudoir</button>
+                            <button className='hover:scale-105 text-center text-white' onClick={()=>handleModalOpen('Boudoir Texture')} aria-label="Lien vers la page portrait événementiel">Boudoir & texture</button>
+                            <button className='hover:scale-105 text-center text-white' onClick={()=>handleModalOpen('Moments de vie')} aria-label="Lien vers la page portrait intimiste">Moments de vie</button>
                             <button className='hover:scale-105 text-center text-white' onClick={()=>handleModalOpen('Extérieur')} aria-label="Lien vers la page portrait émotionnel">Extérieur</button>
-                            <button className='hover:scale-105 text-center text-white' onClick={()=>handleModalOpen('Portrait')} aria-label="Lien vers la page portrait événementiel">Grossesse</button>
-                            <button className='hover:scale-105 text-center text-white' onClick={()=>handleModalOpen('Grossesse')} aria-label="Lien vers la page portrait émotionnel">Moments de vie</button>                           
+                            <button className='hover:scale-105 text-center text-white' onClick={()=>handleModalOpen('Portrait')} aria-label="Lien vers la page portrait événementiel">Portrait</button>
+                            <button className='hover:scale-105 text-center text-white' onClick={()=>handleModalOpen('Grossesse')} aria-label="Lien vers la page portrait émotionnel">Grossesse</button>                           
                         </div>
                         <div className='flex gap-4'>
                         <Link href="/" className="hover:scale-[1.1]" onClick={handleLinkClick} target="blank">
