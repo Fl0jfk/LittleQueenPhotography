@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useDispatch } from "react-redux";
 import { setModalOpenArtistic, setModalOpenBoudoir, setModalOpenBoudoirTexture, setModalOpenMomentsLife, setModalOpenOutside, setModalOpenPortrait, setModalOpenPregnancy } from '@/app/redux/reducers/modal';
 
-function Slide({name, img, shortDescription}: SliderProps) {
+export default function Slide({name, img, shortDescription}: SliderProps) {
     const dispatch = useDispatch();
     const handleModalOpen = () => {
         switch(name) {
@@ -53,5 +53,3 @@ type SliderProps = {
   description: string;
   shortDescription: string;
 };
-
-export default Slide;

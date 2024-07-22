@@ -37,8 +37,7 @@ export default function PortfolioComp(){
                 <motion.div className='grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 gap-8 items-center justify-center w-full'>
                     <AnimatePresence>
                         {limitedImages.map((imgs:{name:string;id:number;link:string,shortDescription:string;description:string;cameraLink:string;latitude:string;longitude:string;date:string;softwareLink:string}) => {
-                            return (
-                                <Image
+                            return <Image
                                     alt={imgs.name}
                                     key={imgs.id}
                                     src={imgs.link}
@@ -49,7 +48,7 @@ export default function PortfolioComp(){
                                     style={{objectFit:"cover"}}
                                     onClick={() => openModalPhotos({namePhotosUp:imgs.name, nameLinkPhotosUp:imgs.link, shortDescriptionPhotosUp:imgs.shortDescription, descriptionPhotosUp:imgs.description, cameraLinkPhotosUp:imgs.cameraLink, longitudePhotosUp: imgs.longitude,softwareLinkPhotosUp: imgs.softwareLink, latitudePhotosUp: imgs.latitude, datePhotosUp: imgs.date})}
                                 />
-                            );
+                            
                         })}
                     </AnimatePresence>
                 </motion.div>

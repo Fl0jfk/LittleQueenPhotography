@@ -6,7 +6,7 @@ import Logo from "../../assets/Logo.png";
 import { useDispatch } from "react-redux";
 import { setModalOpenArtistic, setModalOpenBoudoir, setModalOpenBoudoirTexture, setModalOpenMomentsLife, setModalOpenOutside, setModalOpenPortrait, setModalOpenPregnancy } from '@/app/redux/reducers/modal';
 
-function Navbar({menuOpened, onLinkClick} :NavbarProps ){
+export default function Navbar({menuOpened, onLinkClick} :NavbarProps ){
     const [clickOnLink, setClickOnLink] = useState(menuOpened);
     const menuOpen = (clickOnLink ? "" : "hidden");
     const bgMenuOpen = (clickOnLink ? "#000" : ""  );
@@ -136,5 +136,3 @@ type NavbarProps = {
     menuOpened: boolean;
     onLinkClick: any;
 }
-
-export default Navbar;

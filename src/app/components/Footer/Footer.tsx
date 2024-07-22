@@ -2,11 +2,13 @@ import InstaFeed from "../InstagramFeed/InstaFeed"
 import Link from "next/link"
 import Image from "next/image"
 import LogoFl0jfk from "../../assets/LogoFl0jfk.webp"
+import Chat from "../Chat/Chat"
 
 export default function Footer (){
     return (
         <footer className="w-full h-full p-2 flex flex-col gap-4">
             <InstaFeed/>
+            <Chat/>
             <Link href={"/contact"} className="self-center transition ease-in-out duration-100 rounded-full text-2xl hover:scale-105 text-white p-4">Contactez-moi</Link>
             <div className="flex w-1/5 mx-auto justify-between sm:w-3/5 mt-4">
                 <Link href="https://www.instagram.com/littlequeenphotography/?hl=fr" className="hover:scale-[1.1] transition ease-in-out duration-100" target="blank">

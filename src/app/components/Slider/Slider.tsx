@@ -3,12 +3,11 @@
 import { useState, useRef } from "react";
 import Slide from "./Slide";
 
-function Slider({ props }: SliderProps) {
+export default function Slider({ props }: SliderProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
-
   const handleMouseDown = (e: React.MouseEvent) => {
     if (containerRef.current) {
       setIsDragging(true);
@@ -16,11 +15,7 @@ function Slider({ props }: SliderProps) {
       setScrollLeft(containerRef.current.scrollLeft);
     }
   };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
-
+  const handleMouseUp = () => { setIsDragging(false);};
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDragging || !containerRef.current) return;
     const x = e.pageX;
@@ -28,26 +23,10 @@ function Slider({ props }: SliderProps) {
     const newScrollLeft = scrollLeft - diffX;
     containerRef.current.scrollLeft = newScrollLeft;
   };
-
   return (
-    <div
-      ref={containerRef}
-      className="flex items-center overflow-x-scroll snap-x snap-mandatory cursor-grab select-none h-[650px]"
-      onMouseDown={handleMouseDown}
-      onMouseUp={handleMouseUp}
-      onMouseLeave={handleMouseUp}
-      onMouseMove={handleMouseMove}
-    >
+    <div ref={containerRef} className="flex items-center overflow-x-scroll snap-x snap-mandatory cursor-grab select-none h-[650px]" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onMouseMove={handleMouseMove}>
       {props.map((categories) => {
-        return (
-          <Slide
-            name={categories.name}
-            key={categories.id}
-            img={categories.img}
-            shortDescription={categories.shortDescription}
-            description={categories.description}
-          />
-        );
+        return <Slide name={categories.name} key={categories.id} img={categories.img} shortDescription={categories.shortDescription} description={categories.description}/>
       })}
     </div>
   );
@@ -56,5 +35,3 @@ function Slider({ props }: SliderProps) {
 type SliderProps = {
   props: any[];
 };
-
-export default Slider;

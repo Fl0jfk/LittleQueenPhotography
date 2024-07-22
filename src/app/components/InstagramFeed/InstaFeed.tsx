@@ -30,7 +30,7 @@ export default function InstaFeed() {
                     if (response.ok) {
                         const data = await response.json();
                         setPhotos(data.data || []);
-                        const expirationTime = now + 48 * 60 * 60 * 1000; // 48 hours in milliseconds
+                        const expirationTime = now + 48 * 60 * 60 * 1000;
                         localStorage.setItem('instagramPhotos', JSON.stringify(data.data));
                         localStorage.setItem('instagramPhotosExpiration', expirationTime.toString());
                     } else {

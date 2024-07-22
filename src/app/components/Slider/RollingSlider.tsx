@@ -3,7 +3,7 @@
 import { useData } from "@/app/contexts/data";
 import Slider from "./Slider";
 
-function RollingSlider (){
+export default function RollingSlider (){
     const data = useData();
     return (
         <>
@@ -15,5 +15,3 @@ function RollingSlider (){
         </>
     )
 }
-
-export default RollingSlider;
