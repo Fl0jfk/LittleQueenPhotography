@@ -16,7 +16,7 @@ export default function LinkedIn() {
                     <span className='sr-only'>LinkedIn</span>
                 </Button>
             </div>
-            <FaLinkedin size='4rem' color='white' />
+            <FaLinkedin size='40px' color='white' />
         </Card>
     );
 }

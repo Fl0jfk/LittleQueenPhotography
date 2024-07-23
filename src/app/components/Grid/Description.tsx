@@ -1,14 +1,14 @@
 import Image from 'next/image';
 import Card from '../Card/Card';
+import test from '../../assets/LogoFl0jfk.webp'
 
 export default function Description() {
     return (
         <Card className='flex flex-col justify-center gap-4 p-8'>
             <div className='relative size-14 overflow-hidden rounded-full sm:size-16'>
                 <Image
-                    src=""
+                    src={test}
                     alt='Maulana Ahmad Aji Triadi'
-                    fill
                     sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                 />
             </div>

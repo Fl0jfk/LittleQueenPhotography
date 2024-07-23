@@ -70,7 +70,7 @@ export default function Contact() {
                             aria-label={`My ${social.name}`}
                             target='_blank'
                             rel='noreferrer'>
-                            {<social.icon size='1.3rem' />}
+                            {<social.icon size='20px' />}
                         </Link>
                     ))}
                 </div>
