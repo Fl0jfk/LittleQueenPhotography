@@ -59,7 +59,7 @@ interface GridLayoutProps extends ReactGridLayoutProps {
     smLayout: Layout[];
 }
 
-export function GridLayout({ lgLayout, mdLayout, smLayout, className, children }: GridLayoutProps) {
+function GridLayout({ lgLayout, mdLayout, smLayout, className, children }: GridLayoutProps) {
     const [breakpoint, setBreakpoint] = useState('lg');
     const isMounted = usePageTransition();
     const breakpoints = { lg: 1199, md: 799, sm: 599, xs: 399, xxs: 0 };
@@ -87,11 +87,7 @@ export function GridLayout({ lgLayout, mdLayout, smLayout, className, children }
     };
     return (
         <section className={cn('pt-[100px] max-w-[1000px] mx-auto', className)}>
-            <ResponsiveGridLayout
-                style={{ opacity: isMounted ? 1 : 0, transform: isMounted ? 'translateY(0)' : 'translateY(48px)', transition: 'opacity 500ms, transform 500ms' }}
-                margin={[16, 16]}
-                {...responsiveProps}
-            >
+            <ResponsiveGridLayout style={{ opacity: isMounted ? 1 : 0, transform: isMounted ? 'translateY(0)' : 'translateY(48px)', transition: 'opacity 500ms, transform 500ms' }} margin={[16, 16]} {...responsiveProps}>
                 {children}
             </ResponsiveGridLayout>
         </section>
