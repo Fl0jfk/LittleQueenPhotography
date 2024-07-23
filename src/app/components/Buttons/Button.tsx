@@ -4,11 +4,7 @@ interface ButtonProps<T extends React.ElementType> {
     as?: T;
 }
 
-export default function Button<T extends React.ElementType = 'button'>({
-    as,
-    ...props
-}: ButtonProps<T> &
-    Omit<React.ComponentPropsWithoutRef<T>, keyof ButtonProps<T>>) {
+export default function Button<T extends React.ElementType = 'button'>({ as, ...props}: ButtonProps<T> & Omit<React.ComponentPropsWithoutRef<T>, keyof ButtonProps<T>>) {
     const Component = as ?? 'button';
     return (
         <Component
