@@ -8,6 +8,7 @@ import store from "./redux/store"
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { DataProvider } from './contexts/data';
+import { cn } from './lib/utils';
  
 const SF = SanFrancisco({ src: "./assets/fonts/San Francisco/pro/SF-Pro-Display-Regular.otf"})
 
@@ -20,14 +21,10 @@ export const viewport: Viewport = {
   userScalable: false,
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({children}:{children: React.ReactNode}){
   return (
     <html lang="fr">
-      <body className={`${SF.className} w-full h-full bg-black`}>
+      <body className={cn(`${SF.className} bg-black antialiased`)}>
         <DataProvider>
           <Provider store={store}>
             <Header/>
