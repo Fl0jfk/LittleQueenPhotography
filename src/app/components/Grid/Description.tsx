@@ -16,7 +16,7 @@ export default function Description() {
                 Je suis<span className='text-xl font-semibold'> Marine</span>,
                 Une AME SENSIBLE et bienveillante.{' '}
                 <span className='hidden md:inline'>
-                    Je m'inspire de toutes vos AMES MAGNIFIQUES afin de créer des portraits EMOTIONNELS et AUTHENTIQUE.
+                    Je m&apos;inspire de toutes vos AMES MAGNIFIQUES afin de créer des portraits EMOTIONNELS et AUTHENTIQUE.
                 </span>
             </p>
         </Card>
