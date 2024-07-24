@@ -83,7 +83,7 @@ export default function Spotify() {
         <Card className='flex h-full flex-col justify-between gap-3 p-8'>
             <div className='relative'>
                 <FaSpotify
-                    className='size-14 md:absolute md:right-0 md:top-0 md:size-10 lg:relative lg:size-14'
+                    className='md:absolute md:right-0 md:top-0 lg:relative'
                     color='#1DB954'
                 />
             </div>

@@ -3,7 +3,9 @@
 import Contact from '../components/Grid/Contact';
 import Description from '../components/Grid/Description';
 import LinkedIn from '../components/Grid/Linkedin';
+import Patreon from '../components/Grid/Patreon';
 import Spotify from '../components/Grid/Spotify';
+import Instagram from '../components/Grid/Instagram';
 import { useEffect, useState, useLayoutEffect } from 'react';
 import { Layout, ReactGridLayoutProps, Responsive, WidthProvider } from 'react-grid-layout';
 import { cn } from '@/app/lib/utils';
@@ -26,6 +28,8 @@ interface GridItem {
  const gridItems: GridItem[] = [
     { i: 'description', component: Description },
     { i: 'linkedin', component: LinkedIn },
+    { i: 'patreon', component: Patreon },
+    { i: 'instagram', component: Instagram },
     { i: 'spotify', component: Spotify },
     { i: 'contact', component: Contact },
 ];
@@ -33,15 +37,19 @@ interface GridItem {
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
 const lgLayout: Layout[] = [
-    { i: 'description', x: 0, y: 0, w: 2, h: 1 },
-    { i: 'spotify', x: 2, y: 0, w: 1, h: 1 },
-    { i: 'linkedin', x: 3, y: 0, w: 1, h: 1 },
-    { i: 'contact', x: 0, y: 1, w: 4, h: 1 },
+    { i: 'description', x: 0, y: 0, w: 4, h: 4 },
+    { i: 'spotify', x: 2, y: 0, w: 4, h: 1 },
+    { i: 'linkedin', x: 4, y: 4, w: 2, h: 1 },
+    { i: 'patreon', x: 3, y: 2, w: 2, h: 1 },
+    { i: 'instagram', x: 3, y: 0, w: 1, h: 1 },
+    { i: 'contact', x: 0, y: 1, w: 4, h: 4 },
 ];
 
 const mdLayout: Layout[] = [
     { i: 'description', x: 0, y: 0, w: 2, h: 2 },
-    { i: 'linkedin', x: 2, y: 0, w: 1, h: 1 },
+    { i: 'linkedin', x: 4, y: 0, w: 1, h: 1 },
+    { i: 'patreon', x: 2, y: 0, w: 1, h: 1 },
+    { i: 'instagram', x: 2, y: 0, w: 1, h: 1 },
     { i: 'spotify', x: 0, y: 2, w: 2, h: 1 },
     { i: 'contact', x: 2, y: 1, w: 2, h: 2 },
 ];
@@ -49,6 +57,8 @@ const mdLayout: Layout[] = [
 const smLayout: Layout[] = [
     { i: 'description', x: 0, y: 0, w: 2, h: 2 },
     { i: 'linkedin', x: 0, y: 2, w: 1, h: 1 },
+    { i: 'patreon', x: 0, y: 2, w: 1, h: 1 },
+    { i: 'instagram', x: 1, y: 2, w: 1, h: 1 },
     { i: 'spotify', x: 1, y: 2, w: 1, h: 1 },
     { i: 'contact', x: 0, y: 3, w: 2, h: 1 },
 ];
@@ -86,7 +96,7 @@ function GridLayout({ lgLayout, mdLayout, smLayout, className, children }: GridL
         },
     };
     return (
-        <section className={cn('pt-[100px] max-w-[1000px] mx-auto', className)}>
+        <section className={cn('pt-[100px] max-w-[1200px] mx-auto', className)}>
             <ResponsiveGridLayout style={{ opacity: isMounted ? 1 : 0, transform: isMounted ? 'translateY(0)' : 'translateY(48px)', transition: 'opacity 500ms, transform 500ms' }} margin={[16, 16]} {...responsiveProps}>
                 {children}
             </ResponsiveGridLayout>
