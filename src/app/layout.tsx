@@ -2,6 +2,7 @@
 
 import type { Viewport } from 'next'
 import SanFrancisco from 'next/font/local';
+import Popps from 'next/font/local'
 import './globals.css';
 import { Provider } from "react-redux";
 import store from "./redux/store"
@@ -10,7 +11,9 @@ import Footer from './components/Footer/Footer';
 import { DataProvider } from './contexts/data';
 import { cn } from './lib/utils';
  
-const SF = SanFrancisco({ src: "./assets/fonts/San Francisco/pro/SF-Pro-Display-Regular.otf"})
+const SF = SanFrancisco({ src: "./assets/fonts/Poppins/Poppins-Regular.ttf"});
+const Poppins = Popps({ src: "./assets/fonts/San Francisco/pro/SF-Pro-Display-Regular.otf"})
+
 
 export const viewport: Viewport = {
   themeColor: 'black',
@@ -24,7 +27,7 @@ export const viewport: Viewport = {
 export default function RootLayout({children}:{children: React.ReactNode}){
   return (
     <html lang="fr">
-      <body className={cn(`${SF.className} bg-black antialiased`)}>
+      <body className={cn(`${Poppins.className} bg-black antialiased font-medium`)}>
         <DataProvider>
           <Provider store={store}>
             <Header/>
