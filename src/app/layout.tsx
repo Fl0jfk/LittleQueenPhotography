@@ -12,7 +12,7 @@ import { cn } from './lib/utils';
  
 const Poppins = Popps({ src: "./assets/fonts/Poppins/Poppins-Regular.ttf"})
 
-export const viewport: Viewport = {
+export const viewport: Viewport = {    
   themeColor: 'black',
   width: 'device-width',
   initialScale: 1,
