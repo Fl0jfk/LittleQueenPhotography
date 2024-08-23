@@ -6,6 +6,7 @@ import { sendEmail } from '@/app/utils/send-email';
 export type FormData = {
   name: string;
   email: string;
+  telephone: string;
   message: string;
 };
 
@@ -37,6 +38,18 @@ function FormContact () {
                     placeholder='exemple@domaine.fr'
                     className='w-full rounded-full border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-black-500 focus:shadow-md text-black'
                     {...register('email', { required: true })}
+                    />
+                </div>
+                <div className='mb-5'>
+                    <label htmlFor='telephone' className='mb-3 block text-base font-medium'>Votre numéro de téléphone</label>
+                    <input
+                    type='tel'
+                    id='telephone'
+                    autoComplete='tel'
+                    placeholder='0607080910'
+                    pattern="^[0-9]{10}]$"
+                    className='w-full rounded-full border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-black-500 focus:shadow-md text-black'
+                    {...register('telephone', { required: true })}
                     />
                 </div>
                 <div className='mb-5'>

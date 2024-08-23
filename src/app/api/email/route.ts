@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 
 export async function POST(request: NextRequest) {
-  const { email, name, message } = await request.json();
+  const { email, name, telephone, message } = await request.json();
   const transport = nodemailer.createTransport({
     service: 'gmail',
       auth: {
@@ -15,18 +15,17 @@ export async function POST(request: NextRequest) {
     const mailOptions: Mail.Options = {
       from: process.env.NEXT_PUBLIC_MY_EMAIL,
       to: process.env.NEXT_PUBLIC_MY_EMAIL,
-      // cc: email, (uncomment this line if you want to send a copy to the sender)
-      subject: `Vous avez reçu un mail de ${name} ${email} depuis votre site internet.`,
-      text: message,
+      subject: `Tu as reçu un mail de ${name}, son email est : ${email} depuis LittleQueenPhotography.`,
+      text: `Son numéro de tél est : ${telephone} et son message est : ${message}`,
     };
   
     const sendMailPromise = () =>
       new Promise<string>((resolve, reject) => {
         transport.sendMail(mailOptions, function (err) {
           if (!err) {
-            resolve('Email envoyé');
+            resolve('Email envoyé, nous répondrons rapidement !');
           } else {
-            reject(err.message);
+            reject(`Nous n'avons pas réussi à envoyer votre message. :( Erreur = ${err.message}`);
           }
         });
       });
