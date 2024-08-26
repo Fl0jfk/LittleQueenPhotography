@@ -1,7 +1,6 @@
 export async function GET() {
-  const placeId = 'ChIJ6RZTf8wlnIoRjDML46rOPok';
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-  const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ6RZTf8wlnIoRjDML46rOPok&fields=reviews&key=AIzaSyBG4g57JeFZQuc_lQstkyvD-jQwvGRlj-0&language=fr&reviews_sort=latest`;
+  const placeId ='ChIJ6RZTf8wlnIoRjDML46rOPok';
+  const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&language=fr`;
   try {
       const response = await fetch(url, {
           method: 'GET',
