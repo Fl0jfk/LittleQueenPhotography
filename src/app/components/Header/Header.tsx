@@ -33,7 +33,7 @@ export default function Header(){
             variants={{ visible: { y: 0 }, hidden: { y: "-100%" }}} 
             animate={hidden ? "hidden" : "visible"}
             transition={{duration: 0.35, ease: "easeInOut"}}
-            className={`flex p-4 justify-between items-center w-full fixed z-[12] md:mb-[100px] bg-[#000] ${opacityMenu} self-center text-2xl overflow-hidden`}>
+            className={`flex p-4 justify-between items-center w-full z-[12] md:mb-[100px] bg-[#000] ${opacityMenu} self-center text-2xl overflow-hidden max-w-[1500px] mx-auto`}>
                 <div className='w-2/12 flex items-center h-full sm:w-4/12 md:w-4/12'>
                     {Logo &&
                         <Link href="/">
@@ -41,7 +41,7 @@ export default function Header(){
                         </Link>
                     }
                 </div>
-                <div className='w-10/12 flex justify-end items-center sm:mt-[-5px] h-full'>
+                <div className='w-8/12 flex justify-end items-center sm:mt-[-5px] h-full'>
                     <Navbar menuOpened={menuOpened} onLinkClick={handleLinkClick}/>
                     <div className='flex justify-end w-[40] items-center h-full' onClick={() => handleClick()}>
                         <CrossButton menuOpened={menuOpened}/>

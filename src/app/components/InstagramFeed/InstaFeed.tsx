@@ -50,7 +50,7 @@ export default function InstaFeed() {
     if (loading) { return <p>Loading...</p>; }
     if (error) { return <p>{error}</p>; }
     return (
-        <section className="w-full overflow-hidden overflow-x-scroll h-full">
+        <section className="w-full overflow-hidden overflow-x-scroll h-full mx-auto max-w-[1500px]">
             <div className="flex w-full mx-auto gap-4">
                 {photos.slice(0, 12).map((photo) => (
                     <Link key={photo.id} href={photo.permalink} target="_blank" rel="noopener noreferrer">
