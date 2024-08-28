@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { useData } from '../../contexts/data';
 import CrossButton from '../Buttons/CrossButton';
 import Navbar from '../Navbar/Navbar';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';	
@@ -10,7 +9,6 @@ import Logo from "../../assets/Logo.png"
 import Link from 'next/link';
 
 export default function Header(){
-    const data = useData();
     const { scrollY } = useScroll();
     const [menuOpened, setMenuOpened] = useState(false);
     const [hidden, setHidden ] = useState(false);

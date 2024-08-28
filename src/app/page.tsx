@@ -2,7 +2,7 @@ import Head from 'next/head';
 import RollingSlider from './components/Slider/RollingSlider';
 import Modal from './components/Modals/Modal';
 import Unfolding from './components/Unfolding/Unfolding';
-import Testimonials from './components/TestimonialsCarousel/Testimonials';
+import Testimonials from './components/Testimonials/Testimonials';
 
 export default function Home() {
   return (

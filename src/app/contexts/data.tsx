@@ -107,6 +107,14 @@ type ImagePregnancy ={
   date:string;
 }
 
+type Reviews = {
+  id:number;
+  imageUser:string;
+  nameUser:string;
+  rating:number;
+  message:string;
+}
+
 type Data = {
   profile: Profile;
   categories: Categories[];
@@ -117,6 +125,7 @@ type Data = {
   imageOutside: ImageOutside[];
   imagePortrait: ImagePortrait[];
   imagePregnancy: ImagePregnancy[];
+  reviews: Reviews[];
   error: Error | null;
 };
 
@@ -136,6 +145,7 @@ const initialData: Data = {
   imageOutside:[],
   imagePortrait:[],
   imagePregnancy:[],
+  reviews:[],
   error: null
 };
 

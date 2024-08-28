@@ -2892,5 +2892,98 @@
             "longitude":1.0993,
             "date": "13/06/2024"
         }
+    ],
+    "reviews":[
+        {
+            "id":1,
+            "imageUser":"https://lh3.googleusercontent.com/a/ACg8ocI8wmEZL72V86YdO950ZSckKZG0s1QiOC3Unah1foDogqgR10i4=s64-c-rp-mo-br100",
+            "nameUser":"Florian Hacqueville-Mathi",
+            "rating":5,
+            "message":"Prestataire sérieux, très discret et professionnel, qui a su s'adapter à l'environnement. Nous avons très bien mangé, le cochon de lait était incroyable. Nous ne manquerons pas de vous contacter pour les prochaines occasions."
+        },
+        {
+            "id":2,
+            "imageUser":"https://lh3.googleusercontent.com/a-/ALV-UjWhzMKtI6fhXAjLLV7-KvQVqlIYLH_36rWrOFv4mZqTDG5QUdk=s64-c-rp-mo-br100",
+            "nameUser":"Cmoumoune Cmoumoune",
+            "rating":5,
+            "message":"Je tenais à vous exprimer toute ma gratitude pour votre prestation que vous avez préparé. C'était un véritable régal pour les papilles et tous nos invités ont été enchantés par la qualite de votre cuisine. Votre professionnalisme et votre gentillesse ont largement contribué au succès de notre événement. Merci encore pour cette prestation exceptionnelle."
+        },
+        {
+            "id":3,
+            "imageUser":"https://lh3.googleusercontent.com/a-/ALV-UjUv2XUdWtYpUHVqzzUJ_J01Mg9oYYW0HUEMY7AY9Zm4YNaNo17m=w120-h120-p-rp-mo-br100",
+            "nameUser":"Perrine Hacqueville-Mathi",
+            "rating":5,
+            "message":"Prestation excellente ! Toujours aimable et serviable, Martin saura convenir à vos attentes lors de divers événements/cérémonies. Je recommande !"
+        },
+        {
+            "id":4,
+            "imageUser":"https://lh3.googleusercontent.com/a/ACg8ocLnR6aT1q2Ob776pJgE55hevxiFutluwP-MwhZLw6uI6QQuRQ=w120-h120-p-rp-mo-br100",
+            "nameUser":"Mathilde Depardé",
+            "rating":5,
+            "message":"J’ai contacté ce traiteur pour des cochons de lait et pomme de terre, un vrai régal !! Le serveur Martin est au top. Un conseil si vous hésitez, n’hésitez plus !!"
+        },
+        {
+            "id":5,
+            "imageUser":"https://lh3.googleusercontent.com/a/ACg8ocKcuJExMnB7Eh5BXG2d5Vo0Ctyy35LLCIFvO3Ft0pZh71vH48M=w72-h72-p-rp-mo-ba3-br100",
+            "nameUser":"Axel Barville",
+            "rating":5,
+            "message":"Présent le dimanche pour la fête de Muids et franchement top. Le cochon et l’accompagnement était excellent ! Un personnel très serviable et agréable."
+        },
+        {
+            "id":6,
+            "imageUser":"https://lh3.googleusercontent.com/a/ACg8ocIsUeIDD7fqt0Ai1ZoI6v7pP1ZxQMPO6QR7V3T-INQI56UhRNU=w120-h120-p-rp-mo-br100",
+            "nameUser":"Natacha Kaczmarczyk",
+            "rating":5,
+            "message":"Super prestation. Nous avons fait appel à Calirotis pour le mariage de ma soeur. Tout était parfait ! Martin est vraiment très professionnel. Les assiettes étaient très copieuses et les convives, ravis ! Merci Martin"
+        },
+        {
+            "id":7,
+            "imageUser":"https://lh3.googleusercontent.com/a-/ALV-UjUJseoRPb1HiSHr3mWyMxFdX-wtX4wbhF7afuonuEYsP3P-Cn-0=w120-h120-p-rp-mo-br100",
+            "nameUser":"Astrid FAVREL",
+            "rating":5,
+            "message":"Tous nos remerciements au chef Martin, nos convives et nous mêmes garderont un excellent souvenir ! Amabilité, ponctualité, réactivité, Calirôtis nous a régalé, cochon de lait au top et légumes frais. Encore toutes nos félicitations au chef Martin, et merci encore. Bonne continuation ! Astrid"
+        },
+        {
+            "id":8,
+            "imageUser":"https://lh3.googleusercontent.com/a/ACg8ocIcYXAHS5ydFd7E9ao3MNFfRhaMFqJr1co2USF_5U6dn94W=w120-h120-p-rp-mo-ba2-br100",
+            "nameUser":"Stephanie Hacqueville",
+            "rating":5,
+            "message":"presta nickel pour un coucous rien à redire que du plus"
+        },
+        {
+            "id":9,
+            "imageUser":"https://lh3.googleusercontent.com/a/ACg8ocKvyIh3BRLDbFYwtbWVD5lnZdic58jvwkRePSc-iJyrkMSH6qw=w120-h120-p-rp-mo-br100",
+            "nameUser":"Raphael Vauloup",
+            "rating":5,
+            "message":"Très bonne expérience, une viande de qualité et un personnel très serviable. Je recommande !"
+        },
+        {
+            "id":10,
+            "imageUser":"https://lh3.googleusercontent.com/a/ACg8ocJneXdimVv3z19SmSXg4ie6eS3Kl-XJG5B-DySak61IUKjt7A=w120-h120-p-rp-mo-br100",
+            "nameUser":"Nathan Kaczmarczyk",
+            "rating":5,
+            "message":"Nous avons fait appel à Calirotis pour notre mariage et nous n’avons pas été déçu ! Encore merci"
+        },
+        {
+            "id":11,
+            "imageUser":"https://lh3.googleusercontent.com/a/ACg8ocITl1u5WFFarY3dsYxFTNBL1bKtuV5ZX-n3Yhmw-TR_A1FHWA=w120-h120-p-rp-mo-br100",
+            "nameUser":"Nathan Pare",
+            "rating":5,
+            "message":"Au top 👌"
+        },
+        {
+            "id":12,
+            "imageUser":"https://lh3.googleusercontent.com/a/ACg8ocIJiaXtdrVQQWXmE8EgDmkDtviPERGuARy2aLC4JBJ-Xu06kQ=w120-h120-p-rp-mo-br100",
+            "nameUser":"Allan Morin",
+            "rating":5,
+            "message":"Le top du top ! Prestations et mets de qualité, le sourire en plus, n’hésitez pas !"
+        },
+        {
+            "id":13,
+            "imageUser":"https://lh3.googleusercontent.com/a/ACg8ocI6fGoeo7DH07khAl0MNWzNQ1GXoBFrUimp9TWVUId4ODEKpg=w120-h120-p-rp-mo-br100",
+            "nameUser":"Mickael Lages",
+            "rating":5,
+            "message":"Prestation de qualité! Que des compliments de la part, de nos invités."
+        }
     ]
 }
