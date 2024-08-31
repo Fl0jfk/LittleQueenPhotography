@@ -48,10 +48,10 @@ export default function Contact() {
             </p>
             <div className='inline-flex flex-col items-center gap-6 lg:flex-row'>
                 <Link href="/contact">
-                    <Button className='cancel-drag px-4 py-2'>
+                    <Link href={"/contact"} className='cancel-drag px-4 py-2'>
                         <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
-                        Contacte moi
-                    </Button>
+                        Contactez moi
+                    </Link>
                 </Link>
                 <div className='inline-flex gap-6'>
                     {socials.map((social) => (
