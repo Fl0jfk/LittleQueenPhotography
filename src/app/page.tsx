@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>Page d`&apos;`accueil de LittleQueenPhotography</title>
       </Head>
-      <main className="w-full h-full flex flex-col pt-[10vh] z-[0]">
+      <main className="w-full h-full flex flex-col pt-[10vh] z-[0] md:pt-[0vh] sm:pt-[0vh]">
         <RollingSlider/>
         <Unfolding/>
         <Testimonials/>

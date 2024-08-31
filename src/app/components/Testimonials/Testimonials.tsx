@@ -23,12 +23,12 @@ export default function Testimonials() {
         }
     }, [data]);
     return (
-        <section className="p-8 flex flex-col items-center gap-8 text-white">
-            <h2 className="text-6xl">Avis de nos clients</h2>
+        <section className="p-8 flex flex-col items-center gap-8 text-white hidden">
+            <h2 className="text-4xl">Avis de nos clients</h2>
             {randomReviews.length > 0 && (
-                <div className="grid grid-cols-2 sm:grid-cols-1 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-1 gap-4 mx-auto w-3/4 md:w-4/4 sm:w-4/4">
                     {randomReviews.map((review) => (
-                        <div key={review.id} className="flex-shrink-0 p-4 bg-gray-700 rounded-lg shadow-md w-full max-w-md">
+                        <div key={review.id} className="flex-shrink-0 p-4 rounded-lg border-2 border-white w-full max-w-md">
                             <div className="flex items-center mb-4">
                                 <Image src={review.imageUser}  alt={review.nameUser} width={40} height={40} className="w-16 h-16 rounded-full mr-4 border border-gray-300"/>
                                 <div>
