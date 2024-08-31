@@ -12,13 +12,7 @@ export default function Description() {
                     sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                 />
             </div>
-            <p className='text-balance leading-relaxed'>
-                Je suis<span className='text-xl font-semibold'> Marine</span>,
-                Une AME SENSIBLE et bienveillante.{' '}
-                <span className='hidden md:inline'>
-                    Je m&apos;inspire de toutes vos AMES MAGNIFIQUES afin de créer des portraits EMOTIONNELS et AUTHENTIQUE.
-                </span>
-            </p>
+            <p className='text-balance leading-relaxed text-sm'>Je m’appelle Marine, je suis une âme sensible et bienveillante. Je m’inspire de vous pour créer de merveilleuses photographies d’une valeur inestimable. Passionnée par l’amour, par l’intimité et par la sensualité, mon métier a été pour moi une révélation. Vous offrir mon expérience professionnelle dans les tons chauds pour vous sublimer et vous créer de doux souvenirs. Vivez avoir moi une expérience unique et inoubliable.</p>
         </Card>
     );
 }

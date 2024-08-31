@@ -37,7 +37,7 @@ interface GridItem {
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
 const lgLayout: Layout[] = [
-    { i: 'description', x: 0, y: 0, w: 4, h: 4 },
+    { i: 'description', x: 0, y: 0, w: 6, h: 6 },
     { i: 'spotify', x: 2, y: 0, w: 4, h: 1 },
     { i: 'linkedin', x: 4, y: 4, w: 2, h: 1 },
     { i: 'patreon', x: 3, y: 2, w: 2, h: 1 },

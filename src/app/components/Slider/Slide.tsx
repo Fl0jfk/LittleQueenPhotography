@@ -18,7 +18,7 @@ export default function Slide({name, img, shortDescription}: SliderProps) {
                 break;
             case 'Portrait': dispatch(setModalOpenPortrait());
                 break;
-            case 'Grossesse': dispatch(setModalOpenPregnancy());
+            case 'Maman & bébé': dispatch(setModalOpenPregnancy());
                 break;
             default:
                 break;
@@ -30,8 +30,8 @@ export default function Slide({name, img, shortDescription}: SliderProps) {
             {name && 
                 <>
                     <div className='flex flex-col gap-1'>
-                        <p className='text-white text-lg z-[2]'>{name}</p>
-                        <p className='text-white text-3xl z-[2]'>{shortDescription}</p> 
+                        <p className='text-white text-3xl z-[2]'>{name}</p>
+                        <p className='text-white text-lg z-[2]'>{shortDescription}</p> 
                     </div>       
                     {img && 
                         <Image src={img} fill alt={name} style={{objectFit:"cover"}} quality={60} className='rounded-3xl select-none pointer-events-none' sizes='28vw'/>

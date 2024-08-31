@@ -10,52 +10,52 @@
     "categories": [
         {
             "id":1,
-            "name": "Artistique",
-            "img": "https://littlequeenphotography.s3.eu-west-3.amazonaws.com/artistique/IMG_3271-2.jpg",
-            "shortDescription": "showcase site",
-            "description": "Client: Riding Cities, skateboard association; Mission: Update the Riding Cities website as follows:1. Create a new section, The Founding Members, with the names and photos of the association's creators.2. Modify the section containing the Download Class Schedule button to add a title and two buttons for downloading two different class schedules (one for children and one for adults). Information about the code: Only HTML code needs to be developed. The existing code contains lines that can be reused and adapted to achieve the layout shown in the mockup. The CSS code is already in place, and you should copy and paste the existing CSS classes to style and format the elements as shown in the mockup."
+            "name": "Boudoir",
+            "img": "https://littlequeenphotography.s3.eu-west-3.amazonaws.com/BOUDOIR/IMG_5986.jpg",
+            "shortDescription": "Des portraits doux & binveillants",
+            "description": "Une séance pour vous découvrir, pour révéler votre féminité, votre sensualité et vous réconcilier avec votre corps. C’est vous qui décider de votre séance sur-mesure, votre degré de nudité, vos limites, vos envies. Spécialisée dans cet univers, j’ai à coeur de vous apprendre à aimer votre corps."
         },
         {
             "id":2,
             "name": "Boudoir & Texture",
             "img": "https://littlequeenphotography.s3.eu-west-3.amazonaws.com/Boudoir+%26+texture/IMG_0400.jpg",
-            "shortDescription": "Des portraits doux & binveillants",
-            "description": "Spécialisée dans la photo intimiste, je vous invite dans mon univers sensuel et émotionnel. Je réalise aussi pour vous des portraits plus classiques doux et expressif."
+            "shortDescription": "Des portraits doux & bienveillants",
+            "description": "Passion texture. On réalisera ensemble une séance boudoir artistique avec de l’eau, de la farine, des fruits, des accessoires et tant d’autres choses."
         },
         {
             "id":3,
-            "name": "Boudoir",
-            "img": "https://littlequeenphotography.s3.eu-west-3.amazonaws.com/BOUDOIR/IMG_5986.jpg",
-            "shortDescription": "Des portraits doux & binveillants",
-            "description": "My mission is to develop a mobile-first website that catalogs the menus of gourmet restaurants. In addition to the traditional reservation systems, customers will be able to customize their meal menu so that the dishes are ready upon their arrival. Say goodbye to waiting times at the restaurant!"
+            "name": "Maman & bébé",
+            "img": "https://littlequeenphotography.s3.eu-west-3.amazonaws.com/grossesse+%26+bébé/Grossesse+2.jpg",
+            "shortDescription": "showcase site",
+            "description": "Dans l’amour, le respect et la bienveillance, immortalisons ensemble vos doux moments de bonheur. De la grossesse à l’accouchement, de votre bébé à l’allaitement, de l’habillé au peau contre peau c’est vous qui choisissez."
         },
         {
             "id":4,
-            "name": "Extérieur",
-            "img": "https://littlequeenphotography.s3.eu-west-3.amazonaws.com/extérieur/Extérieur+6.jpg",
-            "shortDescription": "showcase site",
-            "description": "The purpose of this project is to introduce you to the JavaScript programming language, which is highly popular among web developers. It is very structured and will guide you step by step in acquiring the fundamentals of the language. You will soon use it to develop more ambitious websites, but initially, take your first steps with JavaScript... Ideally, completing this project will take you 1 to 2 weeks at most (if you are dedicating full-time to your training). You will be exclusively supported by your mentor, both for the deliverables' completion and for the presentation, which will take the form of a discussion."
-        },
-        {
-            "id":5,
-            "name": "Grossesse",
-            "img": "https://littlequeenphotography.s3.eu-west-3.amazonaws.com/grossesse+%26+bébé/Grossesse+2.jpg",
-            "shortDescription": "showcase site",
-            "description": "I must develop: 1. The presentation page of the architect's work (using the provided HTML as a starting point). 2. The site administrator's (the client's) login page (code to be created from scratch). 3. The modal for uploading new media (code to be created from scratch)."
-        },
-        {
-            "id":6,
             "name": "Moments de vie",
             "img": "https://littlequeenphotography.s3.eu-west-3.amazonaws.com/Moments+de+vie/IMG_7104.jpg",
             "shortDescription": "commercial website",
             "description": ""
         },
         {
-            "id":7,
+            "id":5,
+            "name": "Artistique",
+            "img": "https://littlequeenphotography.s3.eu-west-3.amazonaws.com/artistique/IMG_3271-2.jpg",
+            "shortDescription": "showcase site",
+            "description": "Client: Riding Cities, skateboard association; Mission: Update the Riding Cities website as follows:1. Create a new section, The Founding Members, with the names and photos of the association's creators.2. Modify the section containing the Download Class Schedule button to add a title and two buttons for downloading two different class schedules (one for children and one for adults). Information about the code: Only HTML code needs to be developed. The existing code contains lines that can be reused and adapted to achieve the layout shown in the mockup. The CSS code is already in place, and you should copy and paste the existing CSS classes to style and format the elements as shown in the mockup."
+        },
+        {
+            "id":6,
             "name": "Portrait",
             "img": "https://littlequeenphotography.s3.eu-west-3.amazonaws.com/Portrait/Portrait+5.jpg",
             "shortDescription": "commercial website",
             "description": ""
+        },
+        {
+            "id":7,
+            "name": "Extérieur",
+            "img": "https://littlequeenphotography.s3.eu-west-3.amazonaws.com/extérieur/Extérieur+6.jpg",
+            "shortDescription": "showcase site",
+            "description": "The purpose of this project is to introduce you to the JavaScript programming language, which is highly popular among web developers. It is very structured and will guide you step by step in acquiring the fundamentals of the language. You will soon use it to develop more ambitious websites, but initially, take your first steps with JavaScript... Ideally, completing this project will take you 1 to 2 weeks at most (if you are dedicating full-time to your training). You will be exclusively supported by your mentor, both for the deliverables' completion and for the presentation, which will take the form of a discussion."
         }
     ],
     "imageArtistic":[
