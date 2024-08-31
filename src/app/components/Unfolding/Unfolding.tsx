@@ -36,7 +36,7 @@ export default function Unfolding(){
                 <div className="w-1/2 sm:hidden"/>
                 <div className="flex flex-col w-1/2 sm:w-full border rounded-xl p-10 gap-4 mr-[100px] sm:mr-0">
                     <h3 className="text-2xl self-center uppercase">Après la séance</h3>
-                    <p>Vous pourrez choisir les photos que vous souhaitez que je retouche et prendre le temps nécessaire à cela. Il vous sera aussi possible de changer de formules si vous souhaitez prendre plus de photos, les photos à l&apos;unité sont aussi disponibles. Vous pourrez utiliser vos photos sur les réseaux sociaux en mentionnant toujours mon nom de photographe. IL vous sera interdit par la loi d'ajouter un quelconque filtre ou de réaliser une retouche sur la photographie. Aucune photographie brute vous sera délivrée. Elle ne correspond pas au travail complet de l&apos;artiste. Sur mes différentes plateformes, je ne diffuse pas vos photographies sans votre accord écrit préalable.</p>
+                    <p>Vous pourrez choisir les photos que vous souhaitez que je retouche et prendre le temps nécessaire à cela. Il vous sera aussi possible de changer de formules si vous souhaitez prendre plus de photos, les photos à l&apos;unité sont aussi disponibles. Vous pourrez utiliser vos photos sur les réseaux sociaux en mentionnant toujours mon nom de photographe. IL vous sera interdit par la loi d&apos;ajouter un quelconque filtre ou de réaliser une retouche sur la photographie. Aucune photographie brute vous sera délivrée. Elle ne correspond pas au travail complet de l&apos;artiste. Sur mes différentes plateformes, je ne diffuse pas vos photographies sans votre accord écrit préalable.</p>
                 </div>
             </div>
         </section>
