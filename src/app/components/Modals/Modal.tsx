@@ -29,7 +29,7 @@ export default function Modal() {
     }, [modalIsVisible]);
     return (
         <>
-            <section className={`overflow-y-auto max-h-[90vh] w-[80vw] md:w-[90vw] md:left-[5vw] md:top-[2.5vh] sm:top-[2.5vh] sm:w-[100vw] sm:left-[0vw] absolute left-[10vw] rounded-xl backdrop-blur-2xl z-40 text-white p-6 sm:p-4 overflow-y-auto bg-gray-900 ${modalIsVisibleClass}`}>
+            <section className={`overflow-y-auto max-h-[90vh] w-[80vw] md:w-[90vw] md:left-[5vw] md:top-[2.5vh] sm:top-[2.5vh] sm:w-[100vw] sm:left-[0vw] absolute left-[10vw] rounded-xl backdrop-blur-2xl z-40 text-white p-6 sm:p-4 overflow-y-auto bg-black ${modalIsVisibleClass}`}>
                 <ModalArtistic />
                 <ModalBoudoir />
                 <ModalBoudoirTexture />

@@ -40,7 +40,7 @@ export default function ModalArtistic() {
             </div>
             <p>Des portraits doux & bienveillants</p>
             <p>Spécialisée dans la photo intimiste, je vous invite dans mon univers SENSUEL et EMOTIONNEL. Je réalise aussi pour vous des portraits plus classiques DOUX, et EXPRESSIF</p>
-            <div className="w-full grid grid-cols-4 gap-4 mx-auto md:grid-cols-2 sm:grid-cols-1 bg-gray-700 p-6 rounded-3xl">
+            <div className="w-full grid grid-cols-4 gap-4 mx-auto md:grid-cols-2 sm:grid-cols-1 p-6 rounded-3xl">
                 {data.imageOutside.map((imgs:{name:string;id:number;link:string,shortDescription:string;description:string;cameraLink:string;latitude:string;longitude:string;date:string;softwareLink:string}) => {
                     return (
                         <div key={imgs.id} className="relative">

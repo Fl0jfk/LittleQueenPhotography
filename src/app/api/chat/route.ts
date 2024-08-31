@@ -16,7 +16,7 @@ export async function POST(request: Request) {
         messages: [
             { 
                 role: "system", 
-                content: "Tu es assistant sur un site web. Le site web est un site vitrine pour une photographe. Elle propose différents types de photographies, certaines sont prises de vues ou les clients sont dénudées, le but pour les clientes est d'apprendre à aimer leur corps. Tu dois répondre aux interrogations des clientes."
+                content: "Tu es assistant sur un site web. Le site web est un site vitrine pour une photographe. Elle propose différents types de photographies, certaines sont prises de vues ou les clients sont dénudées, le but pour les clientes est d'apprendre à aimer leur corps. Tu dois répondre aux interrogations des clientes. Les horaires du photographe sont de 08h à 20h du lundi au samedi."
             },
             ...messages
         ]

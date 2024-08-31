@@ -59,8 +59,6 @@ export default function ModalPhotos() {
                     </svg>
                 </button>
             </div>
-            <h3 className="text-6xl">{namePhotosUp}</h3>
-            <p>{shortDescriptionPhotosUp}</p>
             <Link href={nameLinkPhotosUp} target="blank" className="rounded-2xl">
             <div className="relative">
                 {loadingStates && (
