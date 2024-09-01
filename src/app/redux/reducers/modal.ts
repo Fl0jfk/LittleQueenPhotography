@@ -10,15 +10,11 @@ export type modalState = {
     modalPortrait:boolean;
     modalPregnancy:boolean;
     modalPhotos:boolean;
-    namePhotosUp: string;
     nameLinkPhotosUp: string;
-    shortDescriptionPhotosUp: string;
-    descriptionPhotosUp: string;
     cameraLinkPhotosUp: string;
     softwareLinkPhotosUp: string;
     latitudePhotosUp: number;
     longitudePhotosUp: number;
-    datePhotosUp: string;
     previousModal: string;
 }
 
@@ -32,15 +28,11 @@ const initialState : modalState = {
     modalPortrait:false,
     modalPregnancy:false,
     modalPhotos:false,
-    namePhotosUp: "",
     nameLinkPhotosUp: "",
-    shortDescriptionPhotosUp: "",
-    descriptionPhotosUp: "",
     cameraLinkPhotosUp: "",
     softwareLinkPhotosUp: "",
     latitudePhotosUp: 0,
     longitudePhotosUp: 0,
-    datePhotosUp:"",
     previousModal:""
  };
 
@@ -106,14 +98,10 @@ const modalSlice = createSlice({
             state.modalPregnancy=false;
         },
         setPhotoDetails: (state, action) => {
-            state.namePhotosUp = action.payload.namePhotosUp;
             state.nameLinkPhotosUp = action.payload.nameLinkPhotosUp;
-            state.shortDescriptionPhotosUp = action.payload.shortDescriptionPhotosUp;
-            state.descriptionPhotosUp = action.payload.descriptionPhotosUp;
             state.cameraLinkPhotosUp = action.payload.cameraLinkPhotosUp;
             state.latitudePhotosUp = action.payload.latitudePhotosUp;
             state.longitudePhotosUp = action.payload.longitudePhotosUp;
-            state.datePhotosUp = action.payload.datePhotosUp;
             state.previousModal = action.payload.previousModal;   
             state.softwareLinkPhotosUp = action.payload.softwareLinkPhotosUp;  
         }

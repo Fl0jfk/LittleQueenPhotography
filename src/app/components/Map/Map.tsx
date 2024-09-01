@@ -1,4 +1,4 @@
-import { useMemo, useState, useCallback } from "react";
+import { useMemo } from "react";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 
 interface MapProps { latitude: number; longitude: number}

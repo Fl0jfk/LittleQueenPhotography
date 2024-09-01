@@ -50,7 +50,7 @@ export default function ModalArtistic() {
                                 </div>
                             )}
                             <Image
-                                alt={imgs.link}
+                                alt={"Photo"}
                                 src={imgs.link}
                                 width={450}
                                 height={450}

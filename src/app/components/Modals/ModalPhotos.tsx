@@ -12,15 +12,11 @@ export default function ModalPhotos() {
     const pathname = usePathname();
     const whatPage = (pathname === "/portfolio" ? "hidden" : "")
     const modalRef = useRef<HTMLDivElement>(null);
-    const namePhotosUp = useSelector((state: { modal: modalState }) => state.modal.namePhotosUp);
     const nameLinkPhotosUp = useSelector((state: { modal: modalState }) => state.modal.nameLinkPhotosUp);
-    const shortDescriptionPhotosUp = useSelector((state: { modal: modalState }) => state.modal.shortDescriptionPhotosUp);
-    const descriptionPhotosUp = useSelector((state: { modal: modalState }) => state.modal.descriptionPhotosUp);
     const cameraLinkPhotosUp = useSelector((state: { modal: modalState }) => state.modal.cameraLinkPhotosUp);
     const latitudePhotosUp = useSelector((state: { modal: modalState }) => state.modal.latitudePhotosUp);
     const softwareLinkPhotosUp = useSelector((state: { modal: modalState }) => state.modal.softwareLinkPhotosUp);
     const longitudePhotosUp = useSelector((state: { modal: modalState }) => state.modal.longitudePhotosUp);
-    const datePhotosUp = useSelector((state: { modal: modalState }) => state.modal.datePhotosUp);
     const previousModalArchived = useSelector((state: {modal: modalState }) => state.modal.previousModal);
     const [loadingStates, setLoadingStates] = useState(true);
     const handleImageLoad = () => {setLoadingStates(false);};
@@ -66,25 +62,25 @@ export default function ModalPhotos() {
                         <div className="loader"></div>
                     </div>
                 )}
-                {nameLinkPhotosUp&&<Image src={nameLinkPhotosUp} quality={80} alt={namePhotosUp} width={700} height={700} priority={true} onLoad={() => handleImageLoad()} style={{ width: "auto", height: "auto" }} className="rounded-2xl"/>}
+                {nameLinkPhotosUp&&<Image src={nameLinkPhotosUp} quality={80} alt={"Photo"} width={700} height={700} priority={true} onLoad={() => handleImageLoad()} style={{ width: "auto", height: "auto" }} className="rounded-2xl"/>}
             </div>
             </Link>
             <div className="mt-4 flex flex-col w-full gap-4">
                 <div className="flex w-full gap-4 sm:flex-col ">
-                    <div className="flex flex-col w-full h-[450px] rounded-2xl justify-center items-center gap-10 relative p-8 w-1/2 sm:w-full">
+                    <div className="flex flex-col w-full h-[450px] rounded-2xl justify-between items-center gap-10 relative p-8 w-1/2 sm:w-full">
                         <p className="text-white text-3xl">Capturé avec</p>
                         {cameraLinkPhotosUp&& <Image src={cameraLinkPhotosUp} width={300} height={300} style={{ width: "auto", height: "auto" }} alt="Image de l'appareil photo utilisé pour la photo"/>}
                         <span className="h-full w-full absolute bg-black -z-10 opacity-70 rounded-2xl"/>
                     </div>
-                    <div className="w-1/2 rounded-2xl h-[450px] sm:w-full">
-                        <Map latitude={latitudePhotosUp} longitude={longitudePhotosUp}/>
+                    <div className="w-full flex flex-col rounded-2xl justify-between items-center relative h-[450px] gap-8 p-8">
+                        <p className="text-white text-3xl">Edité avec</p>
+                            {softwareLinkPhotosUp&& <Image src={softwareLinkPhotosUp} width={200} height={200} alt="Logo du logiciel utilisé pour le traitement de la photo" style={{ width: "auto", height: "auto" }} className="max-w-[200px] max-h-[200px]"/>}
+                        <span className="h-full w-full absolute bg-black -z-10 opacity-70 rounded-2xl"/>
                     </div>
                 </div>
                 <div className="flex w-full gap-4 sm:flex-col">
-                    <div className="w-full flex flex-col rounded-2xl justify-center items-center relative h-[450px] gap-8 p-8">
-                        <p className="text-white text-3xl">Edité avec</p>
-                        {softwareLinkPhotosUp&& <Image src={softwareLinkPhotosUp} width={200} height={200} alt="Logo du logiciel utilisé pour le traitement de la photo" style={{ width: "auto", height: "auto" }}/>}
-                        <span className="h-full w-full absolute bg-black -z-10 opacity-70 rounded-2xl"/>
+                    <div className="w-1/2 rounded-2xl h-[450px] sm:w-full">
+                        <Map latitude={latitudePhotosUp} longitude={longitudePhotosUp}/>
                     </div>
                 </div>
             </div>
