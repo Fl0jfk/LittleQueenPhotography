@@ -38,10 +38,10 @@ export default function ModalArtistic() {
                     </svg>
                 </button>
             </div>
-            <p>Des portraits doux & bienveillants</p>
-            <p>Spécialisée dans la photo intimiste, je vous invite dans mon univers SENSUEL et EMOTIONNEL. Je réalise aussi pour vous des portraits plus classiques DOUX, et EXPRESSIF</p>
+            {data.categories[1]&&<p>{data.categories[1].shortDescription}</p>}
+            {data.categories[1]&&<p>{data.categories[1].description}</p>}
             <div className="w-full grid grid-cols-4 gap-4 mx-auto md:grid-cols-2 sm:grid-cols-1 p-6 rounded-3xl">
-                {data.imageBoudoirTexture.map((imgs:{name:string;id:number;link:string,shortDescription:string;description:string;cameraLink:string;latitude:string;longitude:string;date:string;softwareLink:string}) => {
+                {data.imageBoudoirTexture.map((imgs:{id:number;link:string;cameraLink:string;latitude:string;longitude:string;softwareLink:string}) => {
                     return (
                         <div key={imgs.id} className="relative">
                             {loadingStates && (
@@ -50,7 +50,7 @@ export default function ModalArtistic() {
                                 </div>
                             )}
                             <Image
-                                alt={imgs.name}
+                                alt={imgs.link}
                                 src={imgs.link}
                                 width={500}
                                 height={500}
@@ -58,7 +58,7 @@ export default function ModalArtistic() {
                                 className="h-full w-full rounded-3xl hover:scale-105 cursor-pointer transition ease-in-out duration-300"
                                 style={{ objectFit: "cover" }}
                                 onClick={() => openModalPhotos({
-                                    namePhotosUp: imgs.name, nameLinkPhotosUp: imgs.link, shortDescriptionPhotosUp: imgs.shortDescription, descriptionPhotosUp: imgs.description, cameraLinkPhotosUp: imgs.cameraLink, longitudePhotosUp: imgs.longitude, softwareLinkPhotosUp: imgs.softwareLink, latitudePhotosUp: imgs.latitude, datePhotosUp: imgs.date, previousModal: "BoudoirTexture"
+                                    nameLinkPhotosUp: imgs.link, cameraLinkPhotosUp: imgs.cameraLink, longitudePhotosUp: imgs.longitude, softwareLinkPhotosUp: imgs.softwareLink, latitudePhotosUp: imgs.latitude, previousModal: "BoudoirTexture"
                                 })}
                                 onLoad={() => handleImageLoad()}
                             />

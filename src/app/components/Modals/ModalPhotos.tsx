@@ -81,11 +81,6 @@ export default function ModalPhotos() {
                     </div>
                 </div>
                 <div className="flex w-full gap-4 sm:flex-col">
-                    <div className="flex flex-col w-full rounded-2xl justify-center items-center p-8 gap-4 relative h-[450px]">
-                        <p className="text-white text-3xl">L&apos;histoire</p>
-                        <p>{descriptionPhotosUp}</p>
-                        <span className="h-full w-full absolute bg-black -z-10 opacity-70 rounded-2xl"/>
-                    </div>
                     <div className="w-full flex flex-col rounded-2xl justify-center items-center relative h-[450px] gap-8 p-8">
                         <p className="text-white text-3xl">Edité avec</p>
                         {softwareLinkPhotosUp&& <Image src={softwareLinkPhotosUp} width={200} height={200} alt="Logo du logiciel utilisé pour le traitement de la photo" style={{ width: "auto", height: "auto" }}/>}
@@ -93,7 +88,6 @@ export default function ModalPhotos() {
                     </div>
                 </div>
             </div>
-            <p>{datePhotosUp}</p>
         </section>   
     );
 }

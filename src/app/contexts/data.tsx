@@ -18,93 +18,65 @@ type Categories = {
 
 type ImageArtistic ={
   id: number;
-  name:string;
   link:string;
-  shortDescription: string;
-  description: string;
   cameraLink: string;
   softwareLink: string;
   latitude: string;
   longitude:string;
-  date:string;
 }
 
 type ImageBoudoirTexture ={
   id: number;
-  name:string;
   link:string;
-  shortDescription: string;
-  description: string;
   cameraLink: string;
   softwareLink: string;
   latitude: string;
   longitude:string;
-  date:string;
 }
 
 type ImageBoudoir ={
   id: number;
-  name:string;
   link:string;
-  shortDescription: string;
-  description: string;
   cameraLink: string;
   softwareLink: string;
   latitude: string;
   longitude:string;
-  date:string;
 }
 
 type ImageMomentsLife ={
   id: number;
-  name:string;
   link:string;
-  shortDescription: string;
-  description: string;
   cameraLink: string;
   softwareLink: string;
   latitude: string;
   longitude:string;
-  date:string;
 }
 
 type ImageOutside ={
   id: number;
-  name:string;
   link:string;
-  shortDescription: string;
-  description: string;
   cameraLink: string;
   softwareLink: string;
   latitude: string;
   longitude:string;
-  date:string;
 }
 
 type ImagePortrait ={
   id: number;
-  name:string;
   link:string;
-  shortDescription: string;
-  description: string;
   cameraLink: string;
   softwareLink: string;
   latitude: string;
   longitude:string;
-  date:string;
 }
 
 type ImagePregnancy ={
   id: number;
-  name:string;
   link:string;
-  shortDescription: string;
-  description: string;
   cameraLink: string;
   softwareLink: string;
   latitude: string;
   longitude:string;
-  date:string;
 }
 
 type Reviews = {
