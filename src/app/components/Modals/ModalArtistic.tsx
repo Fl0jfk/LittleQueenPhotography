@@ -58,7 +58,7 @@ export default function ModalArtistic() {
                                 className="h-full w-full rounded-3xl hover:scale-105 cursor-pointer transition ease-in-out duration-300"
                                 style={{ objectFit: "cover" }}
                                 onClick={() => openModalPhotos({
-                                    namePhotosUp: imgs.link, cameraLinkPhotosUp: imgs.cameraLink, longitudePhotosUp: imgs.longitude, softwareLinkPhotosUp: imgs.softwareLink, latitudePhotosUp: imgs.latitude, previousModal: "Artistic"
+                                    nameLinkPhotosUp: imgs.link, cameraLinkPhotosUp: imgs.cameraLink, longitudePhotosUp: imgs.longitude, softwareLinkPhotosUp: imgs.softwareLink, latitudePhotosUp: imgs.latitude, previousModal: "Artistic"
                                 })}
                                 onLoad={() => handleImageLoad()}
                             />
