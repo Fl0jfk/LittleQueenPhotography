@@ -1,9 +1,7 @@
 import Link from 'next/link';
-import { FaArrowRight } from 'react-icons/fa6';
-import Button from '../Buttons/Button';
 import Card from '../Card/Card';
 
-import { FaFacebook, FaPatreon, FaInstagram, FaLinkedin, FaYoutube} from 'react-icons/fa6';
+import { FaFacebook, FaPatreon, FaInstagram, FaLinkedin} from 'react-icons/fa6';
 import { IconType } from 'react-icons/lib';
 
 interface Socials {
@@ -47,11 +45,8 @@ export default function Contact() {
                 in touch.
             </p>
             <div className='inline-flex flex-col items-center gap-6 lg:flex-row'>
-                <Link href="/contact">
-                    <Link href={"/contact"} className='cancel-drag px-4 py-2'>
-                        <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
-                        Contactez moi
-                    </Link>
+                <Link href="/contact" className='cancel-drag px-4 py-2 border-2 rounded-full border-black'>
+                    Contactez moi
                 </Link>
                 <div className='inline-flex gap-6'>
                     {socials.map((social) => (
@@ -62,7 +57,7 @@ export default function Contact() {
                             aria-label={`My ${social.name}`}
                             target='_blank'
                             rel='noreferrer'>
-                            {<social.icon size='20px' />}
+                            {<social.icon size='20px'/>}
                         </Link>
                     ))}
                 </div>

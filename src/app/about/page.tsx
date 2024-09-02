@@ -60,7 +60,7 @@ const smLayout: Layout[] = [
     { i: 'patreon', x: 0, y: 2, w: 1, h: 1 },
     { i: 'instagram', x: 1, y: 2, w: 1, h: 1 },
     { i: 'spotify', x: 1, y: 2, w: 1, h: 1 },
-    { i: 'contact', x: 0, y: 3, w: 2, h: 1 },
+    { i: 'contact', x: 0, y: 3, w: 2, h: 2 },
 ];
 
 interface GridLayoutProps extends ReactGridLayoutProps {
@@ -96,7 +96,7 @@ function GridLayout({ lgLayout, mdLayout, smLayout, className, children }: GridL
         },
     };
     return (
-        <section className={cn('pt-[100px] max-w-[1200px] mx-auto', className)}>
+        <section className={cn('max-w-[1200px] mx-auto', className)}>
             <ResponsiveGridLayout style={{ opacity: isMounted ? 1 : 0, transform: isMounted ? 'translateY(0)' : 'translateY(48px)', transition: 'opacity 500ms, transform 500ms' }} margin={[16, 16]} {...responsiveProps}>
                 {children}
             </ResponsiveGridLayout>

@@ -62,24 +62,22 @@ export default function ModalPhotos() {
                         <div className="loader"></div>
                     </div>
                 )}
-                {nameLinkPhotosUp&&<Image src={nameLinkPhotosUp} quality={80} alt={"Photo"} width={700} height={700} priority={true} onLoad={() => handleImageLoad()} style={{ width: "auto", height: "auto" }} className="rounded-2xl"/>}
+                {nameLinkPhotosUp&&<Image src={nameLinkPhotosUp} quality={80} alt={"Photo"} width={700} height={700} priority={true} onLoad={() => handleImageLoad()} style={{ width: "auto", height: "auto" }} className="rounded-2xl max-h-[800px]"/>}
             </div>
             </Link>
             <div className="mt-4 flex flex-col w-full gap-4">
-                <div className="flex w-full gap-4 sm:flex-col ">
-                    <div className="flex flex-col w-full h-[450px] rounded-2xl justify-between items-center gap-10 relative p-8 w-1/2 sm:w-full">
+                <div className="flex w-full gap-4 sm:flex-col">
+                    <div className="flex flex-col w-full h-[450px] rounded-2xl items-center gap-10 relative p-8 w-1/2 sm:w-full">
                         <p className="text-white text-3xl">Capturé avec</p>
                         {cameraLinkPhotosUp&& <Image src={cameraLinkPhotosUp} width={300} height={300} style={{ width: "auto", height: "auto" }} alt="Image de l'appareil photo utilisé pour la photo"/>}
-                        <span className="h-full w-full absolute bg-black -z-10 opacity-70 rounded-2xl"/>
                     </div>
-                    <div className="w-full flex flex-col rounded-2xl justify-between items-center relative h-[450px] gap-8 p-8">
+                    <div className="w-full flex flex-col rounded-2xl items-center h-[450px] gap-10 p-8 w-1/2 sm:w-full">
                         <p className="text-white text-3xl">Edité avec</p>
-                            {softwareLinkPhotosUp&& <Image src={softwareLinkPhotosUp} width={200} height={200} alt="Logo du logiciel utilisé pour le traitement de la photo" style={{ width: "auto", height: "auto" }} className="max-w-[200px] max-h-[200px]"/>}
-                        <span className="h-full w-full absolute bg-black -z-10 opacity-70 rounded-2xl"/>
+                            {softwareLinkPhotosUp&& <Image src={softwareLinkPhotosUp} width={300} height={300} alt="Logo du logiciel utilisé pour le traitement de la photo" style={{ width: "auto", height: "auto" }}/>}
                     </div>
                 </div>
                 <div className="flex w-full gap-4 sm:flex-col">
-                    <div className="w-1/2 rounded-2xl h-[450px] sm:w-full">
+                    <div className="rounded-2xl h-[450px] w-full">
                         <Map latitude={latitudePhotosUp} longitude={longitudePhotosUp}/>
                     </div>
                 </div>

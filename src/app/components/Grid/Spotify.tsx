@@ -57,22 +57,22 @@ function NowPlaying() {
             </div>
             <h2
                 className='cancel-drag line-clamp-3 text-2xl font-semibold md:line-clamp-1 lg:line-clamp-3'
-                title={data?.isPlaying ? data?.title : 'Pink + White'}>
+                title={data?.isPlaying ? data?.title : 'Earned It (Fifty Shades Of Grey)'}>
                 <Link
                     href={
                         data?.isPlaying
                             ? data?.songUrl
-                            : 'https://open.spotify.com/track/3xKsf9qdS1CyvXSMEid6g8?si=15c53cbc7c774697'
+                            : 'https://open.spotify.com/intl-fr/track/1cQ3LIkZE68pMSnPhZWXLu'
                     }
                     target='_blank'
                     rel='nofollow noopener noreferrer'>
-                    {data?.isPlaying ? data?.title : 'Pink + White'}
+                    {data?.isPlaying ? data?.title : 'Earned It (Fifty Shades Of Grey)'}
                 </Link>
             </h2>
             <p
                 className='truncate'
-                title={data?.isPlaying ? data?.artist : 'Frank Ocean'}>
-                {data?.isPlaying ? data?.artist : 'Frank Ocean'}
+                title={data?.isPlaying ? data?.artist : 'The Weekend'}>
+                {data?.isPlaying ? data?.artist : 'The Weekend'}
             </p>
         </div>
     );

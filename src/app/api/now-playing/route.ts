@@ -68,13 +68,13 @@ export async function GET() {
 
         const response = {
             isPlaying: data.is_playing,
-            title: data.item.name,
+            title: "Earned It (Fifty Shades Of Grey)",
             album: data.item.album.name,
             artist: data.item.album.artists
-                .map((artist) => artist.name)
+                .map((artist) => "The Weekend")
                 .join(', '),
             albumImageUrl: data.item.album.images[0].url,
-            songUrl: data.item.external_urls.spotify,
+            songUrl: "https://open.spotify.com/intl-fr/track/1cQ3LIkZE68pMSnPhZWXLu",
         };
 
         return NextResponse.json(response);
