@@ -1,4 +1,4 @@
-faviconimport { cn } from "../../lib/utils";
+import { cn } from "../../lib/utils";
 
 interface ButtonProps<T extends React.ElementType> {
     as?: T;
