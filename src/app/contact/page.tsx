@@ -4,7 +4,7 @@ export default function Contact (){
     return (
         <main className="sm:pt-[8vh] md:pt-[10vh]">
             <section id="contact" className="p-4 flex flex-col items-center justify-center gap-10 w-full mx-auto max-w-[600px] text-white">
-                <h2 className='text-7xl text-center'>Contact</h2>
+                <h1 className='text-7xl text-center'>Contact</h1>
                 <div className="flex items-center w-full justify-center">
                     <p>Vous pouvez nous joindre directement en remplissant le formulaire. Nous vous répondrons le plus rapidement possible.</p>
                 </div>

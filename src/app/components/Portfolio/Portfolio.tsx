@@ -33,12 +33,12 @@ export default function PortfolioComp(){
         <>
             <Modal/>
             <section className="p-8 flex flex-col justify-center items-center w-full mx-auto max-w-[1440px] self-center">
-                <h2 className='text-7xl mb-10 md:text-5xl sm:text-4xl w-full text-center'>Portfolio</h2>
+                <h1 className='text-7xl mb-10 md:text-5xl sm:text-4xl w-full text-center'>Portfolio</h1>
                 <motion.div className='grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 gap-8 items-center justify-center w-full'>
                     <AnimatePresence>
-                        {limitedImages.map((imgs:{name:string;id:number;link:string,shortDescription:string;description:string;cameraLink:string;latitude:string;longitude:string;date:string;softwareLink:string}) => {
+                        {limitedImages.map((imgs:{id:number;link:string;cameraLink:string;latitude:string;longitude:string;softwareLink:string})=>{
                             return <Image
-                                    alt={imgs.name}
+                                    alt="Photo"
                                     key={imgs.id}
                                     src={imgs.link}
                                     width={450}
@@ -46,9 +46,8 @@ export default function PortfolioComp(){
                                     quality={50}
                                     className="h-full w-full rounded-3xl hover:scale-105 cursor-pointer transition ease-in-out duration-300"
                                     style={{objectFit:"cover"}}
-                                    onClick={() => openModalPhotos({namePhotosUp:imgs.name, nameLinkPhotosUp:imgs.link, shortDescriptionPhotosUp:imgs.shortDescription, descriptionPhotosUp:imgs.description, cameraLinkPhotosUp:imgs.cameraLink, longitudePhotosUp: imgs.longitude,softwareLinkPhotosUp: imgs.softwareLink, latitudePhotosUp: imgs.latitude, datePhotosUp: imgs.date})}
+                                    onClick={() => openModalPhotos({ nameLinkPhotosUp:imgs.link, cameraLinkPhotosUp:imgs.cameraLink, longitudePhotosUp: imgs.longitude,softwareLinkPhotosUp: imgs.softwareLink, latitudePhotosUp: imgs.latitude})}
                                 />
-                            
                         })}
                     </AnimatePresence>
                 </motion.div>

@@ -48,6 +48,7 @@ export default function RootLayout({children}:{children: React.ReactNode}){
   };
   const pathname = usePathname();
   const { title, description } = metaDetails[pathname] || metaDetails["/"];
+  console.log(title)
   return (
     <html lang="fr">
       <Head>

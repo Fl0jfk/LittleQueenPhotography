@@ -107,6 +107,7 @@ function GridLayout({ lgLayout, mdLayout, smLayout, className, children }: GridL
 export default function About() {
     return (
         <main className='py-8 w-full'>
+            <h1 className='text-black'>À propos</h1>
             <GridLayout lgLayout={lgLayout} mdLayout={mdLayout} smLayout={smLayout}>
                 {gridItems.map((item) => (
                     <div key={item.i}>{<item.component />}</div>
