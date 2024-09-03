@@ -1,7 +1,16 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { useEffect, useState } from 'react';
 
 export default function Metadata() {
+    const [isClient, setIsClient] = useState(false);
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
+    if (!isClient) {
+        return null;
+    }
     const router = useRouter();
     const metaDetails: Record<string, { title: string; description: string }> = {
         "/": {
