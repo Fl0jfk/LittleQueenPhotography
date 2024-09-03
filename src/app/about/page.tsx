@@ -9,7 +9,6 @@ import Instagram from '../components/Grid/Instagram';
 import { useEffect, useState, useLayoutEffect } from 'react';
 import { Layout, ReactGridLayoutProps, Responsive, WidthProvider } from 'react-grid-layout';
 import { cn } from '@/app/lib/utils';
-import Head from 'next/head';
 
 function usePageTransition(delay = 0) {
     const [isMounted, setIsMounted] = useState(false);
@@ -97,17 +96,11 @@ function GridLayout({ lgLayout, mdLayout, smLayout, className, children }: GridL
         },
     };
     return (
-        <>
-            <Head>
-                <title>Page à propos de LittleQueenPhotography</title>
-                <meta name='description' content='Votre photographe boudoir'/>
-            </Head>
-            <main className={cn('max-w-[1200px] mx-auto sm:pt-[8vh] md:pt-[10vh]', className)}>
-                <ResponsiveGridLayout style={{ opacity: isMounted ? 1 : 0, transform: isMounted ? 'translateY(0)' : 'translateY(48px)', transition: 'opacity 500ms, transform 500ms' }} margin={[16, 16]} {...responsiveProps}>
-                    {children}
-                </ResponsiveGridLayout>
-            </main>
-        </>
+        <main className={cn('max-w-[1200px] mx-auto sm:pt-[8vh] md:pt-[10vh]', className)}>
+            <ResponsiveGridLayout style={{ opacity: isMounted ? 1 : 0, transform: isMounted ? 'translateY(0)' : 'translateY(48px)', transition: 'opacity 500ms, transform 500ms' }} margin={[16, 16]} {...responsiveProps}>
+                {children}
+            </ResponsiveGridLayout>
+        </main>
     );
 }
 

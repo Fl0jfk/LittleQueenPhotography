@@ -9,6 +9,8 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { DataProvider } from './contexts/data';
 import { cn } from './lib/utils';
+import Metadata from './components/Metadata/Metadata';
+
  
 const Poppins = Popps({ src: "./assets/fonts/Poppins/Poppins-Regular.ttf"})
 
@@ -24,6 +26,7 @@ export const viewport: Viewport = {
 export default function RootLayout({children}:{children: React.ReactNode}){
   return (
     <html lang="fr">
+      <Metadata/>
       <body className={cn(`${Poppins.className} bg-black antialiased font-medium`)}>
         <DataProvider>
           <Provider store={store}>
