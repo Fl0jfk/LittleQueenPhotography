@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import Logo from "../../assets/Logo.png";
 import { useDispatch } from "react-redux";
+import { usePathname } from 'next/navigation';
 import { setModalOpenArtistic, setModalOpenBoudoir, setModalOpenBoudoirTexture, setModalOpenMomentsLife, setModalOpenOutside, setModalOpenPortrait, setModalOpenPregnancy } from '@/app/redux/reducers/modal';
 
 export default function Navbar({menuOpened, onLinkClick} :NavbarProps ){
@@ -14,6 +15,7 @@ export default function Navbar({menuOpened, onLinkClick} :NavbarProps ){
     const servicesVisible = (servicesAppear ? "" : "hidden");
     const restOfMenu = (!servicesAppear ? "" : "hidden");
     const dispatch = useDispatch();
+    const pathname = usePathname();
     const handleModalOpen = (name:string) => {
         switch(name) {
             case 'Artistique': dispatch(setModalOpenArtistic());
@@ -49,6 +51,7 @@ export default function Navbar({menuOpened, onLinkClick} :NavbarProps ){
             document.body.classList.remove('overflow-hidden');
         }
     }, [menuOpened])
+    const isActive = (href: string) => pathname === href ? 'bg-[#6f3d47]' : '';
     return (
         <>
             <AnimatePresence>
@@ -130,10 +133,10 @@ export default function Navbar({menuOpened, onLinkClick} :NavbarProps ){
                 }
             </AnimatePresence>
             <nav  className={`flex xl:absolute lg:absolute xl:left-[35%] lg:left-[30%] gap-6 sm:hidden md:hidden z-[9] border-2 rounded-full border-white p-1`}>
-                <Link className='hover:scale-125 transition ease-in-out duration-100 delay-75 text-white hover:bg-[#6f3d47] p-2 rounded-full' href="/" aria-label="Lien vers la page d'accueil">Accueil</Link>
-                <Link className='hover:scale-125 transition ease-in-out duration-100 delay-75 text-white hover:bg-[#6f3d47] p-2 rounded-full' href="/portfolio" aria-label="Lien vers la page portfolio">Portfolio</Link>
-                <Link className='hover:scale-125 transition ease-in-out duration-100 delay-75 text-white hover:bg-[#6f3d47] p-2 rounded-full' href="/about" aria-label="Lien vers la page à propos">À propos</Link>
-                <Link className='hover:scale-125 transition ease-in-out duration-100 delay-75 text-white hover:bg-[#6f3d47] p-2 rounded-full' href="/contact" aria-label="Lien vers la page contact">Contact</Link>
+                <Link className={`transition ease-in-out duration-100 delay-75 text-white hover:bg-[#6f3d47] p-2 rounded-full ${isActive('/')}`} href="/" aria-label="Lien vers la page d'accueil">Accueil</Link>
+                <Link className={`transition ease-in-out duration-100 delay-75 text-white hover:bg-[#6f3d47] p-2 rounded-full ${isActive('/portfolio')}`} href="/portfolio" aria-label="Lien vers la page portfolio">Portfolio</Link>
+                <Link className={`transition ease-in-out duration-100 delay-75 text-white hover:bg-[#6f3d47] p-2 rounded-full ${isActive('/about')}`} href="/about" aria-label="Lien vers la page à propos">À propos</Link>
+                <Link className={`transition ease-in-out duration-100 delay-75 text-white hover:bg-[#6f3d47] p-2 rounded-full ${isActive('/contact')}`} href="/contact" aria-label="Lien vers la page contact">Contact</Link>
             </nav>
         </>
     )
