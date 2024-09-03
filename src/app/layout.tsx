@@ -39,7 +39,7 @@ const metaDetails: Record<string, { title: string; description: string }> = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const { title = 'Default Title', description = 'Default Description' } = metaDetails[pathname] || {};
+  const { title, description } = metaDetails[pathname] || {};
   useEffect(() => {
     document.title = title;
     const metaDescription = document.querySelector('meta[name="description"]');
