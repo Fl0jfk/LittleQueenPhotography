@@ -9,8 +9,9 @@ export default function Home() {
     <>
       <Head>
         <title>Page d`&apos;`accueil de LittleQueenPhotography</title>
+        <meta name='description' content='Votre photographe boudoir'/>
       </Head>
-      <main className="w-full h-full flex flex-col z-[0]">
+      <main className="w-full h-full flex flex-col z-[0] sm:pt-[8vh] md:pt-[10vh]">
         <RollingSlider/>
         <Unfolding/>
         <Testimonials/>

@@ -1,19 +1,26 @@
 import FormContact from "../components/Forms/FormContact"
+import Head from "next/head"
 
 export default function Contact (){
     return (
-        <main className="pt-[100px]">
-            <section id="contact" className="p-4 flex flex-col items-center justify-center gap-10 w-full mx-auto max-w-[600px] text-white">
-                <h2 className='text-7xl text-center'>Contact</h2>
-                <div className="flex items-center w-full justify-center">
-                    <p>Vous pouvez nous joindre directement en remplissant le formulaire. Nous vous répondrons le plus rapidement possible.</p>
-                </div>
-                <div className="flex flex-col gap-4 p-6 w-full">
-                    <div className="flex gap-10 justify-center items-center">
-                        <FormContact/>
+        <>
+            <Head>
+                <title>Page de contact de LittleQueenPhotography</title>
+                <meta name='description' content='Votre photographe boudoir'/>
+            </Head>
+            <main className="sm:pt-[8vh] md:pt-[10vh]">
+                <section id="contact" className="p-4 flex flex-col items-center justify-center gap-10 w-full mx-auto max-w-[600px] text-white">
+                    <h2 className='text-7xl text-center'>Contact</h2>
+                    <div className="flex items-center w-full justify-center">
+                        <p>Vous pouvez nous joindre directement en remplissant le formulaire. Nous vous répondrons le plus rapidement possible.</p>
                     </div>
-                </div> 
-            </section>
-        </main>
+                    <div className="flex flex-col gap-4 p-6 w-full">
+                        <div className="flex gap-10 justify-center items-center">
+                            <FormContact/>
+                        </div>
+                    </div> 
+                </section>
+            </main>
+        </>
     )
 }
