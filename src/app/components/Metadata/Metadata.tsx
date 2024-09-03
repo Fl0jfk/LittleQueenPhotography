@@ -1,17 +1,9 @@
+import { usePathname } from 'next/navigation';
 import Head from "next/head";
-import { useRouter } from "next/router";
-import { useEffect, useState } from 'react';
 
 export default function Metadata() {
-    const [isClient, setIsClient] = useState(false);
-    useEffect(() => {
-        setIsClient(true);
-    }, []);
+    const pathname = usePathname();
 
-    if (!isClient) {
-        return null;
-    }
-    const router = useRouter();
     const metaDetails: Record<string, { title: string; description: string }> = {
         "/": {
             title: "LittleQueenPhotography : Votre photographe boudoir à Rouen",
@@ -34,7 +26,9 @@ export default function Metadata() {
             description: "Venez me découvrir et n'hésitez pas à me contacter",
         }
     };
-    const { title, description } = metaDetails[router.pathname] || metaDetails["/"];
+
+    const { title, description } = metaDetails[pathname] || metaDetails["/"];
+
     return (
         <Head>
             <title>{title}</title>
@@ -42,3 +36,4 @@ export default function Metadata() {
         </Head>
     );
 }
+

@@ -9,7 +9,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { DataProvider } from './contexts/data';
 import { cn } from './lib/utils';
-import dynamic from 'next/dynamic';
+import Metadata from './components/Metadata/Metadata';
 
 const Poppins = Popps({ src: "./assets/fonts/Poppins/Poppins-Regular.ttf"})
 
@@ -21,8 +21,6 @@ export const viewport: Viewport = {
   maximumScale: 1,
   userScalable: false,
 }
-
-const Metadata = dynamic(() => import('./components/Metadata/Metadata'), { ssr: false });
 
 export default function RootLayout({children}:{children: React.ReactNode}){
   return (
