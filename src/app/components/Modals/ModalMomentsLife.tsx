@@ -49,23 +49,16 @@ export default function ModalArtistic() {
                                 <div className="loader"></div>
                             </div>
                         )}
-                        <Image
-                            alt={"Photo"}
-                            src={imgs.link}
-                            width={500}
-                            height={500}
-                            quality={50}
-                            className="h-full w-full rounded-3xl hover:scale-105 cursor-pointer transition ease-in-out duration-300"
-                            style={{ objectFit: "cover" }}
-                            onClick={() => openModalPhotos({
-                                nameLinkPhotosUp: imgs.link, cameraLinkPhotosUp: imgs.cameraLink, longitudePhotosUp: imgs.longitude, softwareLinkPhotosUp: imgs.softwareLink, latitudePhotosUp: imgs.latitude, previousModal: "MomentsLife"
-                            })}
-                            onLoad={() => handleImageLoad()}
-                        />
+                        <Image alt={"Photo"} src={imgs.link} width={500} height={500} quality={60} className="h-full w-full rounded-3xl hover:scale-105 cursor-pointer transition ease-in-out duration-300" style={{ objectFit: "cover" }} onClick={() => openModalPhotos({nameLinkPhotosUp: imgs.link, cameraLinkPhotosUp: imgs.cameraLink, longitudePhotosUp: imgs.longitude, softwareLinkPhotosUp: imgs.softwareLink, latitudePhotosUp: imgs.latitude, previousModal: "MomentsLife"})} onLoad={() => handleImageLoad()}/>
                     </div>
                     );
                 })}
             </div>
+            <button  onClick={()=>modalRef.current?.scrollIntoView({ behavior:'smooth'})}  className="absolute bottom-0 left-[47.5%]">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                </svg>
+            </button>
         </section>
     )
 }
