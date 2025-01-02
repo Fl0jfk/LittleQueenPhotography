@@ -50,7 +50,7 @@ export default function Footer (){
             </div>
             <Link href={"/mentionslegales"} className="text-white self-center text-xl transition ease-in-out duration-100 hover:scale-105">Mentions légales</Link>
             <p className="text-white self-center text-lg mt-4">
-                &copy; 2024 
+                &copy; 2025 
                 <Link href={"/"} className="text-[#6f3d47]"> LittleQueenPhotography </Link>
                   - Tous droits réservés | Une création de 
                 <Link href={"https://fl0jfk.com"} target="blank"> Fl0jfk
